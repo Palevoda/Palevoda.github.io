@@ -257,3 +257,1252 @@ footer
     padding-left: 3%;
 }
 
+@media(min-width: 315px) and (max-width: 340px)
+{
+
+header
+{
+        height: 65px
+}
+
+.imtext
+{
+    
+   margin-left: 23%;
+   margin-right: 37.5%;
+   margin-top: 1%;
+    width: 50%;
+    
+}
+
+#headicon
+{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 14.2px;
+   left: 4%;
+   z-index: 1;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.25em;   
+    margin-left: 5px;
+    padding-top: 11px;
+    padding-left: 20%;
+    letter-spacing: 0.5px;  
+}
+#nameofheader2
+{
+
+    font-size: 0.85em;
+    font-weight: 530;
+    font-family: Arial, Helvetica, sans-serif;  
+    position: absolute;
+    top: 27px;
+    left: 65px;
+    color: #65c178;
+      
+}
+
+article 
+{
+    width: 92%;
+    left: -19px;
+    position: absolute;    
+    top: 490px;  
+}
+
+nav
+{  
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;   
+   width: 93%;  
+   top: 85px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 12.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3200px;
+}
+
+li > a
+{
+    font-size: 0.95em;
+    padding-right: 10px;   
+}
+
+#pnav
+{
+  
+    font-size: 1.1em;
+    font-weight: 550;
+    padding-left: 12%; 
+    padding-right: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;    
+}
+
+.tomenu
+{
+    
+    font-size: 1.1em;
+    font-weight: 550;   
+    margin: 10px 0 20px 14%;
+}
+}
+
+@media(min-width: 339px) and (max-width: 365px)
+{
+    header
+{
+        height: 65px;
+}
+
+#headicon
+{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 14px;
+   left: 4%;
+   z-index: 1;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.3em;
+    margin-left: 11%;
+    padding-top: 10px;
+    padding-left: 7.5%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 0.88em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    left: 18.2%;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 92%;
+    position: absolute;
+    left: -23px;    
+    top: 493px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 93%;  
+   top: 83px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 12.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.1em;
+    padding-left: 15%; 
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;    
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 18%;
+}
+
+.imtext {width: 50%; margin-left: 25%;}
+}
+
+@media(min-width: 364px) and (max-width: 390px)
+{
+
+     header
+{
+        height: 73px;
+}
+
+#headicon
+{
+   width: 55px;
+   height: 55px;
+   position: absolute;
+   top: 16px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.5em;
+    margin-left: 12%;
+    padding-top: 11.5px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 93%;
+    position: absolute;
+    left: -24px;    
+    top: 530px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 94%;  
+   top: 92px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 12.6pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1.05em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.1em;     
+    padding: 1% 15% 1% 15%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 20.5%;
+}
+}
+
+@media(min-width: 389px) and (max-width: 420px)
+{
+header
+{
+        height: 72px;
+}
+
+#headicon
+{
+   width: 55px;
+   height: 55px;
+   position: absolute;
+   top: 16px;
+   left: 4%;
+   z-index: 1;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.5em;
+    margin-left: 12%;
+    padding-top: 12px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.9%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+
+article 
+{
+    width: 94%;
+    position: absolute;
+    left: -30px;    
+    top: 560px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 94.5%;  
+   top: 90px;
+   left: 7px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1.1em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.3em;     
+    padding: 1% 15% 1% 15%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 24%;
+}
+
+.imtext
+{
+    width: 50%;
+    margin-left: 25%;
+}
+}
+
+@media(min-width: 419px) and (max-width: 450px)
+{
+header
+{
+        height: 75px;
+}
+
+#headicon
+{
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 15px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.6em;
+    margin-left: 12%;
+    padding-top: 11px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.07em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+
+article 
+{
+    width: 94%;
+    position: absolute;
+    left: -30px;    
+    top: 575px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 94.5%;  
+   top: 93px;
+   left: 7px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1.1em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.3em;     
+    padding: 1% 15% 1% 15%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 25%;
+}
+
+.imtext
+{
+    width: 50%;
+    margin-left: 25%;
+}
+}
+
+
+@media(min-width: 449px) and (max-width: 490px)
+{
+
+header
+{
+    height: 80px;
+}
+
+#headicon
+{
+   width: 65px;
+   height: 65px;
+   position: absolute;
+   top: 15px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.7em;
+    margin-left: 12%;
+    padding-top: 12px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.7%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94%;
+    position: absolute;
+    left: -35px;    
+    top: 597px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95%;  
+   top: 100px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 20px;}
+
+li > a
+{
+    font-size: 1.1em;      
+}
+
+#pnav
+{
+  
+    font-size: 1.3em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 28%;
+}
+
+.imtext {width: 50%; margin-left: 25%;}
+}
+
+
+@media(min-width: 489px) and (max-width: 530px)
+{
+
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 85px;
+}
+
+#headicon
+{
+   width: 65px;
+   height: 65px;
+   position: absolute;
+   top: 18px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.85em;
+    margin-left: 12%;
+    padding-top: 14px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.25em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 32px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -40px;    
+    top: 625px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 102px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 20px;}
+
+li > a
+{
+    font-size: 1.1em;      
+}
+
+#pnav
+{
+  
+    font-size: 1.4em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 27.5%;
+}
+}
+
+@media(min-width: 529px) and (max-width: 570px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 95px;
+}
+
+#headicon
+{
+   width: 75px;
+   height: 75px;
+   position: absolute;
+   top: 19px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.95em;
+    margin-left: 12%;
+    padding-top: 16px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 37px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -41px;    
+    top: 715px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 113px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 26.5%;
+}
+}
+
+
+@media(min-width: 569px) and (max-width: 606px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 105px;
+}
+
+#headicon
+{
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 19px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.1em;
+    margin-left: 12%;
+    padding-top: 16px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.35em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 40px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -44px;    
+    top: 738px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 122px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 26.5%;
+}
+}
+
+@media(min-width: 605px) and (max-width: 645px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 105px;
+}
+
+#headicon
+{
+   width: 83px;
+   height: 83px;
+   position: absolute;
+   top: 21px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.2em;
+    margin-left: 12%;
+    padding-top: 16px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -44px;    
+    top: 760px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 125px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 26.5%;
+}
+}
+
+@media(min-width: 644px) and (max-width: 700px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 105px;
+}
+
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 20px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.3em;
+    margin-left: 12%;
+    padding-top: 18px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.45em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -49px;    
+    top: 773px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 122px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 28.5%;
+}
+}
+
+@media(min-width: 699px) and (max-width: 750px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 107px;
+}
+
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 20px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.4em;
+    margin-left: 11%;
+    padding-top: 18px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -55px;    
+    top: 800px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 127px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 30%;
+}
+}
+
+@media(min-width: 749px) and (max-width: 805px)
+{
+
+    
+.imtext {width: 40%; margin-left: 30%;}
+  header
+{
+        height: 107px;
+}
+
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 20px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.4em;
+    margin-left: 11%;
+    padding-top: 18px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -59px;    
+    top: 825px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 130px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 34%;
+}
+}
