@@ -1,0 +1,3 @@
+D:\Программирование\Основы IT лабораторные\2 сем\Лабораторная работа 5\NodejsWebApp1\NodejsWebApp1\obj\Debug\NodejsWebApp1.njsprojAssemblyReference.cache
+D:\Программирование\Основы IT лабораторные\2 сем\Лабораторная работа 5\NodejsWebApp1\NodejsWebApp1\obj\Debug\NodejsWebApp1.njsproj.CoreCompileInputs.cache
+D:\Программирование\Основы IT лабораторные\2 сем\Лабораторная работа 5\NodejsWebApp1\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll

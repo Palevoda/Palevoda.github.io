@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Меню</title>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+</script>
+<style>
+    .item, .item2{
+border: 2px soild #66CDAA;
+border-radius: 5px;
+display: none;
+position: relative;
+
+margin-left: 7px;
+background-color: #66CDAA;
+padding: 5px;
+width: 100px;
+height: 25px;
+margin-top: 10px;
+}
+.menu-item .submenu{
+
+width: 70px;
+left: 10px;
+top: 35px;
+height: 20px;
+background: gray;
+border: 2px soild gray;
+border-radius: 5px;
+position: absolute;
+cursor: pointer;
+width: 90px;
+}
+
+#nav {
+  
+
+display: inline-table;
+list-style-type: none;
+
+}
+
+text
+{
+  text-decoration: none;
+    color: rgb(66,75,95);
+
+    background-color: whitesmoke; 
+    font-size: 1em;
+    font-weight: 550;
+    padding-left: 30px; 
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 2px solid #65c178;        
+/*  синий цвет #4088b5*/
+    border-bottom: 2px solid #65c178;
+    width: 100px;
+}
+    
+
+</style>
+
+
+
+
+
+</head>
+<body>
+
+<ul id="nav">
+    <text id = "pnav">Список 1</text>
+<li class = "item">1</li>
+<li class = "item">2</li>
+<li class = "item">3</li>
+</ul>
+
+<ul id="nav">
+    <text id = "pnav2">Список 2</text>
+<li class = "item2">4</li>
+<li class = "item2">5</li>
+<li class = "item2">6</li>
+</ul>
+
+<script>
+
+$("#pnav").mouseover(function(){$(".item").css("display","block");});
+
+$('#pnav').mouseout(function () {
+    $('.item').css('display', 'none');
+}); 
+
+$("#pnav2").mouseover(function(){$(".item2").css("display","block");});
+
+$('#pnav2').mouseout(function () {
+    $('.item2').css('display', 'none');
+}); 
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LR_8.0</title>
+
+<style>
+  .task6
+  {
+      border: 1.5px dashed rgb(55, 47, 75);
+      width: 300px;
+      height: 25px;
+      margin-left: 30px;
+      text-align: center;
+      font-size: 13pt;
+      font-weight: 550px;
+      padding-top: 4px;
+  }
+</style>
+
+<script>
+    //Сделано так, чтобы при отведении курсора цвет менялся на исходный 
+    function task_1()
+    {
+      document.getElementById("kek").style.color = "red";   
+    }
+
+    function task_1_2()
+    {
+        document.getElementById("kek").style.color = "black";
+    }
+
+    function task_2()
+    {
+        document.getElementById("kek2").style.fontSize = "14pt";
+    }
+
+    function task_3()
+    {
+        vesta = document.getElementById("kek3");
+        vesta.style.width = "255px";
+        vesta.style.height = "112px";
+        vesta.src = "vesta.jpg";
+    }
+
+    function task_4()
+    {
+        document.getElementById("kek4").innerHTML = '<img src = "kodiaq.jpeg" width = "427px" height = "282px">';
+    }
+
+    function task_5()
+    {
+        BMW = document.getElementById("kek5");
+        BMW.style.width = "480px";
+        BMW.style.height = "270px";
+    }
+
+    function task_5_2()
+    {
+        BMW = document.getElementById("kek5");
+        BMW.style.width = "320px";
+        BMW.style.height = "180px";
+    }
+
+    function task_6()
+    {
+       
+        object = document.getElementById("kek6");
+      //  object.style.border = "2px dotted green";
+        object.className = 'task6';
+          
+    }
+
+</script>
+
+</head>
+
+
+<body>
+     <text onmouseover="task_1()" onmouseout="task_1_2()" name = "text1" id = "kek">Текст для задания 1</text><br>
+     <text onclick="task_2()" id = "kek2">Текст для задания 2</text><br>
+     <img src = "lada.jpg" width = "266px" height = "166px" id = "kek3" onclick = "task_3()"><br>
+     <text onclick = "task_4()" id = "kek4">Skoda Kodiak</text><br>
+     <img src = "bmw.jpg" id = "kek5" width = "320px" height = "180px" onmouseover = "task_5()" onmouseout="task_5_2()" ><br>
+     <p id = "kek6" ondblclick = "task_6()">Абзац для задания 6</p>
+
+</body>
+</html>

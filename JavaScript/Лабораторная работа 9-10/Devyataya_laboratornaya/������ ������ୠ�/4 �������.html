@@ -1,0 +1,64 @@
+<html>
+<head>
+
+</head>
+<body>
+<img src='1.bmp' id='pix' style=" display:none; position:relative;top:200px;left:0px">
+<form name='first'>
+<input type="radio" name="line_type" value='x*x'>x^2
+<input type="radio" name="line_type" value='x*x*x'>x^3
+<input type="radio" name="line_type" value='Math.sin(x)'>SIN(X)
+<input type="radio" name="line_type" value='Math.cos(x)'>COS(X)
+
+<select>
+  <option value='1'>Красный</option>
+  <option value='2'>Зеленый</option>
+  <option value='3'>Синий</option>
+  <option value='4'>Черный</option>
+</select>
+</form>
+<BUTTON onclick="pre_write()">go</button>
+<script>
+var xst,yst,x;
+var color;
+var drawing;
+var fun_name;
+function pre_write()
+{
+yst = parseInt(document.all['pix'].style.top);
+xst = parseInt(document.all['pix'].style.left);
+x=xst;
+y=yst;
+radio = document.getElementsByName('line_type')
+color = document.getElementsByTagName('option')
+for(i=0;i<radio.length;i++)
+if (radio[i].checked)
+fnc_to_draw = radio[i].value
+
+fun_name = fnc_to_draw;
+drawing = setInterval("write("+fnc_to_draw+")",25)
+for(i=0;i<color.length;i++)
+if (color[i].selected)
+color = color[i].value
+}
+
+
+function write(fnc_to_draw)
+{
+x+=0.1;
+y=yst+eval(fnc_to_draw)*10;
+document.write('<img src="'+color+'.bmp" style="position:relative;top:'+y+'px;left:'+x+'px">')
+
+switch(fun_name)
+{
+case 'x*x':var end=10; break;
+case 'x*x*x':var end=4; break;
+case 'Math.sin(x)':var end=15; break;
+case 'Math.cos(x)':var end=15; break;
+}
+if(x>=end)
+	clearInterval(drawing)
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="70mm" height="100mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#2B2A29;stroke-width:50;stroke-miterlimit:22.9256}
+    .str0 {stroke:black;stroke-width:50;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil2 {fill:#228653; filter: drop-shadow(0px 25px 4px rgba(0, 0, 0, 0.3));}
+    .fil3 {fill:#228000}
+    .fil4 {fill:black}
+    .fil1 {fill:brown}
+   ]]>
+  </style>
+  <filter if = "shad" x = "10" y = "10" width = "200%" height = "200%">
+  <feOffset result = "offOut" in = "SourceAlpha" dx = "20" dy = "20"/>
+  <feGaussianBlur result = "blurOut" in = "offOut" stdDeviation = "10"/>
+  <feBlend in = "SourceGraphic" in2 = "blurOut" mode = "normal"/>  
+  </filter>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="9930.37,5826.08 11222.95,7146.73 12515.52,8467.37 9930.37,8467.37 7345.22,8467.37 8637.79,7146.73 "/>
+  <polygon class="fil0 str0" points="9808.08,8516.28 11830.77,10387.21 13853.45,12258.13 9808.08,12258.13 5762.71,12258.13 7785.39,10387.21 "/>
+  <polygon class="fil0 str0" points="9832.54,12331.51 12480.04,14660.99 15127.53,16990.47 9832.54,16990.47 4537.55,16990.47 7185.04,14660.99 "/>
+  <rect class="fil1 str0" x="8922.1" y="16990.49" width="1614.13" height="2042.13" />
+  <polygon class="fil2 str1" points="7345.22,8467.37 9930.37,8467.37 12515.52,8467.37 11222.95,7146.73 9930.37,5826.08 8637.79,7146.73 "/>
+  <polygon class="fil1 str1" points="9808.08,8516.28 7785.39,10387.21 5762.71,12258.13 9808.08,12258.13 13853.45,12258.13 11830.77,10387.21 "/>
+  <polygon class="fil2 str1" points="7345.22,8467.37 9930.37,8467.37 12515.52,8467.37 11222.95,7146.73 9930.37,5826.08 8637.79,7146.73 "/>
+  <polygon class="fil3 str1" points="9832.54,12331.51 7185.04,14660.99 4537.55,16990.47 8922.11,16990.47 9832.54,16990.47 10536.24,16990.47 15127.53,16990.47 12480.04,14660.99 " />
+  <polygon class="fil4 str1" points="5762.71,12258.13 9808.08,12258.13 13853.45,12258.13 11830.77,10387.21 9808.08,8516.28 7785.39,10387.21 " />
+  <polygon class="fil1 str1" points="9832.54,16990.49 8922.11,16990.49 8922.11,19032.62 10536.24,19032.62 10536.24,16990.49 " />
+ </g>
+</svg>

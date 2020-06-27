@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gist</title>
+
+</head>
+<body>
+    <!--Гистограмма-->
+<img src = "p2.jpg" id = "pattern1"  style = "display:none;">
+
+<text style = "font-size: 13pt; font-weight: 550;">Цвет осей:</text><input type="color" id="color" onchange="color()"></br>
+<text style = "font-size: 13pt; font-weight: 550;">Цвет подписи:</text><input type="color" id="color2" onchange="color2()"></br>
+<input type="button" value="Нарисовать гистограмму" class="button" onclick="fun1()"> <br>
+
+<canvas id="canvas" width="650px" height="450px"></canvas>
+<script>
+function color() {
+var color = document.querySelector('#color').value;
+return color;
+}
+function color2() {
+var color = document.querySelector('#color2').value;
+return color;
+}
+
+function fun1() {
+let canvas = document.querySelector('#canvas');
+let x = canvas.getContext('2d');
+x.beginPath();
+x.moveTo(680, 370);
+x.lineTo(100, 370);
+x.lineTo(100, 30);
+x.strokeStyle= color();
+x.stroke();
+
+x.font=  '10pt Verdana';
+x.fillStyle= color2();
+
+//Подпись оси У
+for (i = 0, y = 385; i <= 11; i++, y = y - 30)
+{
+    if (i < 10)
+    x.fillText(i, 80, y);
+    if (i >= 10) x.fillText(i, 75, y);
+}
+
+x.fillText('Сад', 150, 405);
+
+x.fillText('Школа', 250, 405);
+
+x.fillText('Университет', 350, 405);
+
+x.fillText('Годы', 75, 20);
+
+x.fillText('Учебное заведение', 490, 360);
+
+// Создаем градиент
+var grd = x.createLinearGradient(140, 369, 190, 289);
+grd.addColorStop(0,"yellow");
+grd.addColorStop(1,"lime");
+
+
+// Заполняем градиентом фигуру
+x.fillStyle=grd;
+x.fillRect(140, 369, 50, -80);
+
+var img = document.getElementById('pattern1');
+var pat= x.createPattern(img, "repeat");
+x.fillStyle = pat;
+x.fillRect(250, 369, 50, -330);
+
+x.fillStyle = "#028E9B";
+x.fillRect(380, 369, 50, -30);
+}
+
+
+</script>
+</body>
+
+</html>

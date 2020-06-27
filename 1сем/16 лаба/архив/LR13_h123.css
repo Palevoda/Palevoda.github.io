@@ -1,0 +1,101 @@
+h1,h2,h3,span
+{
+    color: rgb(105, 85, 138);
+    font-family: Arial;
+
+}
+
+ol
+{
+    margin-left: 23%;
+    
+}
+#ul1
+{
+    color: greenyellow;
+    font-size: 15pt;
+    font-family: Impact, 'Arial Narrow Bold';
+    list-style-image: url(emoji.jpg);
+}
+
+#ul2
+{
+    color: purple;
+    font-size: 15pt;
+    list-style-type: square;
+    font-family:Georgia;
+}
+
+#ul3
+{     
+    color: brown;
+    font-size: 15pt;
+    list-style-type: square;
+    font-family:Georgia;
+}
+
+a:link 
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: rgb(135, 233, 135);
+}
+
+a:active
+{
+    color: black;
+}
+
+
+table 
+{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    border: 3px dashed rgb(39, 107, 0);  
+    margin:auto;  
+}
+td
+{
+    border: 1px outset black;    
+}
+tr
+{
+    border: 0px outset black; 
+}
+
+.text1 :first-child
+{
+    color: rgb(71, 61, 82);
+
+}
+
+p:first-letter 
+{font-size: 25px;
+ color: red;
+ -webkit-text-stroke: 1px black; /*Не работает в Chrome, работает в Edge*/
+}
+
+p::first-line
+{
+ text-decoration: underline;   
+}
+
+#a1name::before
+{
+    content: "студент I курса ";
+
+}
+
+#a1name::after
+{
+    content: "проживающий по адресу ул.Притыцкого д.89 кв. 61 ";
+    
+}

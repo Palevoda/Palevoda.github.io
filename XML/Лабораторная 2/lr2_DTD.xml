@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<!--<!DOCTYPE note SYSTEM "Note.dtd"> -->
+<!DOCTYPE note 
+[
+<!ELEMENT note (university, city, point, plan)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT point (#PCDATA)>
+<!ELEMENT plan (#PCDATA)>
+]>
+
+
+<note>
+ <university>БГУ</university>
+ <city>Минск</city>
+ <point>328</point>
+ <plan>60</plan>
+
+ <university>БНТУ</university>
+ <city>Минск</city>
+ <point>312</point>
+ <plan>55</plan>
+
+ <university>БГУИР</university>
+ <city>Минск</city>
+ <point>360</point>
+ <plan>20</plan>
+
+ <university>Митсо</university>
+ <city>Минск</city>
+ <point>280</point>
+ <plan>90</plan>
+</note>

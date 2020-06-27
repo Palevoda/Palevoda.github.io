@@ -1,0 +1,1761 @@
+/*Иконка в хедере спрятана с помощью visibility*/
+/*
+@font-face{
+  font-family: 'header_two';
+  src:  url('fonts/fontforheader.ttf');
+  
+}
+*/
+#symbol 
+{
+    text-decoration: overline;
+}
+
+.example
+{
+    border: 2px solid #65c178;
+   /* border: 2px solid rgb(48,206,191);*/
+
+    border-radius: 15px;
+    padding: 5px;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+h2, h1
+{
+    text-align: center;
+}
+
+.topic
+{
+    font-size: 21pt;
+}
+
+.labelofexample
+{
+    color: whitesmoke;
+    background-color: rgb(101, 193, 120);
+   /* background-color: rgb(48,206,191);*/
+    font-size: 15pt;
+    font-weight: 600;
+    padding: 5px 20px;
+    
+    position: relative;
+    left: 20px;
+    top: -2px;
+
+    letter-spacing: 0.3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 0;
+   
+}
+
+.myb
+{
+    font-weight: 550;
+    color: rgb(61, 69, 88);
+}
+
+.important
+{
+    width: 88%;
+   border: 1px solid  rgb(235, 181, 82, 0.6);
+    border-radius: 10px;
+    background-color: rgb(235, 181, 82, 0.6);
+   /* background-color: rgb(101, 193, 120, 0.6); */
+
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    font-size: 14pt;
+    letter-spacing: 0.3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 3%;
+    
+}
+
+#tomainpage
+{
+    position: absolute;
+    left: 80%;
+    top: 45px;
+
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border: 1.5px solid #65c178;
+    border-radius: 15px;
+
+    font-size: 16pt;
+    font-weight: 550;
+}
+
+article
+{
+background-color: white;
+border: 1px solid white;
+border-radius: 10px;
+margin-top: 1%;
+line-height: 1.35;
+}
+body
+{
+background-color: rgb(236, 236, 236);
+
+}
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 23px;
+   left: 4%;
+   z-index: 2;
+    background-color: rgb(66,75,95);
+    
+}
+#pnav
+{
+  text-decoration: none;
+    color: whitesmoke;
+ 
+    background-color: rgb(66,75,95); 
+    font-size: 1.4em;
+    font-weight: 550;
+    padding-left: 15%; 
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-top: 2px solid #65c178;   
+    border-top: 2px solid rgb(48,206,191);     
+/*  синий цвет #4088b5*/
+    border-bottom: 2px solid #65c178;
+    border-bottom: 2px solid  rgb(48,206,191);
+    text-align: center;
+}
+
+p
+{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-indent: 4.5%;
+    letter-spacing: 0.3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-indent: 0;
+    
+}
+
+
+
+
+header 
+{
+    width: 100%;
+    height: 17%;
+   
+    background-color: rgb(79,90,110); 
+    color: white; 
+   
+  
+    border-radius: 10px;
+    
+}
+#nameofheader1
+{
+
+    font-size: 2.5em;
+    padding-top: 15px;
+    position: relative;
+   z-index: 10;
+    left: -25%;
+    letter-spacing: 3px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 0%;
+  
+}
+#nameofheader2
+{
+
+    font-size: 1.5em;
+    font-weight: 700;
+   
+    font-family: 'header_two';
+    
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 40px;
+    left: 8.5%;
+    color: #65c178;
+    background-color: rgb(79,90,110); 
+     text-indent: 0%;
+    
+}
+
+article 
+{
+    width: 60%;
+    margin-left: 10%;
+    display: inline-block;
+   
+}
+.textimage
+{
+    width: 70%;
+    margin-left: 15%;
+}
+
+p
+{
+    font-size: 14pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    background-color: white;
+    padding-left: 2%;
+}
+
+.text_in_menu
+{
+    font-size: 15pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    color: white;
+    padding-left: 2%;
+    font-weight: 550;
+
+}
+
+nav
+{
+   display: inline-block;
+   position: absolute; 
+   
+   margin-top: 1%;
+   margin-left: 1%;
+  
+   background-color: rgb(66,75,95);
+   width: 28%;
+
+   border: 1px solid rgb(66,75,95);
+   border-radius: 9px;
+    
+
+}
+
+#nav2
+{
+   display: inline-block;
+   position: absolute;
+   top: 500px;
+  
+  
+
+   margin-top: 1%;
+   margin-left: 2%;
+  
+   background-color: rgb(66,75,95);
+   width: 25%;
+
+   border: 1px solid rgb(66,75,95);
+   border-radius: 9px;
+    
+
+}
+
+nav li 
+{
+list-style-type: none;
+border-top: 1px solid #65c178;
+border-top: rgb(48,206,191);
+border-top: 1px solid rgb(48,206,191);
+
+margin-left: 5%;
+width: 80%;
+
+padding-bottom: 2%;
+padding-top: 2%;
+}
+
+li > a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.15em;
+    font-weight: 500;
+    padding-left: 6%;
+    padding-right: 4%;
+    
+    
+}
+
+#tomainpage > a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.a_in_menu
+{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 550;
+    font-size: 12.5pt;
+
+}
+a {text-decoration: none;
+}
+#tomainpage:hover
+{
+    border: 2px solid rgb(79,90,110);
+    background-color: #7dc22e;
+ 
+    color: whitesmoke;
+
+}
+
+/*
+li > a:hover
+{
+    border-left: 3px solid #4088b5;
+    font-weight: 500;
+   
+}*/
+
+footer
+{
+    width: 100%;
+    height: 9%;
+   
+    background-color: rgb(79,90,110); 
+    color: white; 
+   
+   
+    border-radius: 10px;
+
+    margin-top: 1%;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.imtext
+{
+    
+   margin-left: 37.5%;
+   margin-right: 37.5%;
+   margin-top: 1%;
+    width: 25%;
+    
+}
+
+
+
+.intextimage
+{
+    width: 80%;
+    margin-left: 10%;
+    z-index: 2;
+}
+
+.exampleimage
+{
+    width: 90%;
+    margin-left: 5%;
+    z-index: 2;
+}
+
+.tomenu
+{
+    text-decoration: none;
+    color: rgb(79,90,110);
+    font-size: 1.2em;
+    font-weight: 550;
+    border: 2px solid #65c178;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px 35px 5px 35px;
+    
+   margin: 30px 0px 30px 37.5%;
+
+}
+
+.tomenu:hover
+{
+    text-decoration: none;
+    color: rgb(79,90,110);
+    font-size: 1.2em;
+    font-weight: 600;
+    border: 2.5px solid #4088b5;
+    border-radius: 15px;
+    background-color: white;
+    
+    
+}
+
+.task
+{
+    width: 90%;
+    margin: auto;
+    border: 2px solid #7dc22e;
+    border-radius: 15px;
+}
+
+.photointask
+{
+    border: none;
+    width: 90%;
+    margin: auto;
+    padding-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.textareaintask
+{
+    margin-left: 10%;
+    width: 25%;
+    height: 15px;
+}
+
+.showsolution
+{
+    width: 20%;
+    height: 20px;
+    font-size: 16pt;
+    border: 2px dashed #4088b5;
+    padding: 4px;
+    margin-top: 5px;
+    margin-left: 70%;
+    border-radius: 5px;
+    
+}
+
+.answerphoto
+{
+    z-index: 0;
+    width: 22%;
+    height: 24px;
+   opacity: 0;
+    
+    margin-left: 70%;
+    position: relative;
+    bottom: 20px;
+    
+}
+
+.answerphoto:hover
+{
+    visibility: visible;
+    width: 824px;
+    height: 211px;
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: 200px;
+    margin-top: 50px;
+    opacity: 1;
+
+
+    
+}
+/*
+#rect
+{
+    background-color: cadetblue;
+    width: 336px;
+    height: 280px;
+}
+*/
+
+.attantion
+{
+    margin: auto;
+    width: 90%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 2px solid #4088b5;
+    border-radius: 7px;
+}
+
+#nav_matrix
+{
+    text-align: center;
+}
+
+#matrix_list
+{
+    display: none;
+    position: relative;
+    left: -12%;
+    font-size: 12pt;
+}
+
+.matrix_list_items
+{
+    border: 1px solid rgb(48,206,191);
+    background-color: rgb(66,75,95);
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-weight: 550;
+    margin-top: 7px;
+    padding-left: 3%;
+}
+
+
+@media(min-width: 315px) and (max-width: 340px)
+{
+
+header
+{
+        height: 65px
+}
+
+.imtext
+{
+    
+   margin-left: 23%;
+   margin-right: 37.5%;
+   margin-top: 1%;
+    width: 50%;
+    
+}
+
+#headicon
+{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 14.2px;
+   left: 4%;
+   z-index: 1;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.25em;   
+    margin-left: 5px;
+    padding-top: 11px;
+    padding-left: 20%;
+    letter-spacing: 0.5px;  
+}
+#nameofheader2
+{
+
+    font-size: 0.85em;
+    font-weight: 530;
+    font-family: Arial, Helvetica, sans-serif;  
+    position: absolute;
+    top: 27px;
+    left: 65px;
+    color: #65c178;
+      
+}
+
+article 
+{
+    width: 92%;
+    left: -19px;
+    position: absolute;    
+    top: 490px;  
+}
+
+nav
+{  
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;   
+   width: 93%;  
+   top: 85px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 12.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3200px;
+}
+
+li > a
+{
+    font-size: 0.95em;
+    padding-right: 10px;   
+}
+
+#pnav
+{
+  
+    font-size: 1.1em;
+    font-weight: 550;
+    padding-left: 12%; 
+    padding-right: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;    
+}
+
+.tomenu
+{
+    
+    font-size: 1.1em;
+    font-weight: 550;   
+    margin: 10px 0 20px 14%;
+}
+}
+
+@media(min-width: 339px) and (max-width: 365px)
+{
+    header
+{
+        height: 65px;
+}
+
+#headicon
+{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 14px;
+   left: 4%;
+   z-index: 1;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.3em;
+    margin-left: 11%;
+    padding-top: 10px;
+    padding-left: 7.5%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 0.88em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    left: 18.2%;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 92%;
+    position: absolute;
+    left: -23px;    
+    top: 493px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 93%;  
+   top: 83px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 12.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.1em;
+    padding-left: 15%; 
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;    
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 18%;
+}
+
+.imtext {width: 50%; margin-left: 25%;}
+}
+
+@media(min-width: 364px) and (max-width: 390px)
+{
+
+     header
+{
+        height: 73px;
+}
+
+#headicon
+{
+   width: 55px;
+   height: 55px;
+   position: absolute;
+   top: 16px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.5em;
+    margin-left: 12%;
+    padding-top: 11.5px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 93%;
+    position: absolute;
+    left: -24px;    
+    top: 530px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 94%;  
+   top: 92px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 12.6pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1.05em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.1em;     
+    padding: 1% 15% 1% 15%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 20.5%;
+}
+}
+
+@media(min-width: 389px) and (max-width: 420px)
+{
+header
+{
+        height: 72px;
+}
+
+#headicon
+{
+   width: 55px;
+   height: 55px;
+   position: absolute;
+   top: 16px;
+   left: 4%;
+   z-index: 1;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.5em;
+    margin-left: 12%;
+    padding-top: 12px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.9%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+
+article 
+{
+    width: 94%;
+    position: absolute;
+    left: -30px;    
+    top: 560px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 94.5%;  
+   top: 90px;
+   left: 7px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1.1em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.3em;     
+    padding: 1% 15% 1% 15%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 24%;
+}
+
+.imtext
+{
+    width: 50%;
+    margin-left: 25%;
+}
+}
+
+@media(min-width: 419px) and (max-width: 450px)
+{
+header
+{
+        height: 75px;
+}
+
+#headicon
+{
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 15px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.6em;
+    margin-left: 12%;
+    padding-top: 11px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.07em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+
+article 
+{
+    width: 94%;
+    position: absolute;
+    left: -30px;    
+    top: 575px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 94.5%;  
+   top: 93px;
+   left: 7px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+
+li > a
+{
+    font-size: 1.1em;   
+}
+
+#pnav
+{
+  
+    font-size: 1.3em;     
+    padding: 1% 15% 1% 15%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 25%;
+}
+
+.imtext
+{
+    width: 50%;
+    margin-left: 25%;
+}
+}
+
+
+@media(min-width: 449px) and (max-width: 490px)
+{
+
+header
+{
+    height: 80px;
+}
+
+#headicon
+{
+   width: 65px;
+   height: 65px;
+   position: absolute;
+   top: 15px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.7em;
+    margin-left: 12%;
+    padding-top: 12px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.7%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 28px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94%;
+    position: absolute;
+    left: -35px;    
+    top: 597px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95%;  
+   top: 100px;
+   left: 7.5px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 20px;}
+
+li > a
+{
+    font-size: 1.1em;      
+}
+
+#pnav
+{
+  
+    font-size: 1.3em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 28%;
+}
+
+.imtext {width: 50%; margin-left: 25%;}
+}
+
+
+@media(min-width: 489px) and (max-width: 530px)
+{
+
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 85px;
+}
+
+#headicon
+{
+   width: 65px;
+   height: 65px;
+   position: absolute;
+   top: 18px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.85em;
+    margin-left: 12%;
+    padding-top: 14px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.25em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 32px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -40px;    
+    top: 625px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 102px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 13pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 20px;}
+
+li > a
+{
+    font-size: 1.1em;      
+}
+
+#pnav
+{
+  
+    font-size: 1.4em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.1em; 
+    margin: 10px 0px 20px 27.5%;
+}
+}
+
+@media(min-width: 529px) and (max-width: 570px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 95px;
+}
+
+#headicon
+{
+   width: 75px;
+   height: 75px;
+   position: absolute;
+   top: 19px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 1.95em;
+    margin-left: 12%;
+    padding-top: 16px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 37px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -41px;    
+    top: 715px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 113px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 26.5%;
+}
+}
+
+
+@media(min-width: 569px) and (max-width: 606px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 105px;
+}
+
+#headicon
+{
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 19px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.1em;
+    margin-left: 12%;
+    padding-top: 16px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.35em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 40px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -44px;    
+    top: 738px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 122px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 26.5%;
+}
+}
+
+@media(min-width: 605px) and (max-width: 645px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 105px;
+}
+
+#headicon
+{
+   width: 83px;
+   height: 83px;
+   position: absolute;
+   top: 21px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.2em;
+    margin-left: 12%;
+    padding-top: 16px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -44px;    
+    top: 760px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 125px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 26.5%;
+}
+}
+
+@media(min-width: 644px) and (max-width: 700px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 105px;
+}
+
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 20px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.3em;
+    margin-left: 12%;
+    padding-top: 18px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.45em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 9.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -49px;    
+    top: 773px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 122px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 28.5%;
+}
+}
+
+@media(min-width: 699px) and (max-width: 750px)
+{
+
+    
+.imtext {width: 50%; margin-left: 25%;}
+  header
+{
+        height: 107px;
+}
+
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 20px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.4em;
+    margin-left: 11%;
+    padding-top: 18px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -55px;    
+    top: 800px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 127px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 30%;
+}
+}
+
+@media(min-width: 749px) and (max-width: 805px)
+{
+
+    
+.imtext {width: 40%; margin-left: 30%;}
+  header
+{
+        height: 107px;
+}
+
+#headicon
+{
+   width: 85px;
+   height: 85px;
+   position: absolute;
+   top: 20px;
+   left: 4%;
+   z-index: 2;
+}
+
+#nameofheader1
+{
+
+    font-size: 2.4em;
+    margin-left: 11%;
+    padding-top: 18px;
+    padding-left: 7%;
+    letter-spacing: 0.5px;
+      
+}
+#nameofheader2
+{
+
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 8.5%;  
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 42px;
+    color: #65c178;   
+}
+
+article 
+{
+    width: 94.5%;
+    position: absolute;
+    left: -59px;    
+    top: 825px;
+}
+
+nav
+{
+   position: absolute;
+   margin-top: 1%;
+   margin-left: 1%;
+   width: 95.5%;  
+   top: 130px;
+   left: 6px;   
+}
+
+p
+{
+    font-size: 14.5pt;
+}
+
+footer
+{
+    position: absolute;
+    width: 92%;
+    left: -15px;
+    top: 3000px;
+}
+li { padding-left: 50px;}
+
+li > a
+{
+    font-size: 1.4em;   
+    width: 35%;   
+}
+
+#pnav
+{
+  
+    font-size: 1.7em;     
+    padding: 1% 15% 1% 18%;  
+}
+
+.tomenu
+{    
+    font-size: 1.3em; 
+    margin: 10px 0px 20px 34%;
+}
+}
+

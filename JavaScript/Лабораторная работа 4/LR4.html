@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+</style>
+<script>
+
+// Задание 1
+document.write('Задание 1 <br\>');
+function Gruppa(n, spec, kolich)
+{
+
+this.n=n;
+this.spec=spec;
+this.kolich=kolich;
+
+this.add_stud = function add_stud (k) 
+{
+this.kolich+=k;
+document.write('В группу ' + this.n + ' добавили '+ k + ' студентов. Теперь в группе ' + this.kolich + ' студентов <br\>');
+}
+
+this.sub_stud = function sub_stud(num)
+{
+    this.kolich = this.kolich - num;
+    document.write('Из группы отчислили ' + num + ' студентов. Теперь в группе ' + this.kolich + ' студентов <br\>');
+}
+
+}
+
+
+gr1=new Gruppa(2,'ИСИТ', 28);
+gr1.add_stud(2);
+gr1.sub_stud(3);
+document.write('<br\>');
+
+gr2 = new Gruppa(6, 'ПОИТ', 30);
+gr2.add_stud(0);
+gr2.sub_stud(5);
+document.write('<br\>');
+
+gr3 = new Gruppa(9, 'ПОИБМС', 28);
+gr3.sub_stud(7);
+gr3.add_stud(4);
+document.write('<br\>');
+
+gr4 = new Gruppa(9, 'ПОИБМС', 28);
+gr4.add_stud(4);
+gr4.sub_stud(17);
+document.write('<br\>');
+
+
+
+Gruppa.prototype.kurs=this.kurs
+gr1.kurs=2
+
+
+
+
+
+document.write('Задание 2  <br\>');
+//Задание 2
+function student(name, surname, fscore, mscore, infscore)
+{
+    this.name = name;
+    this.surname = surname;
+    this.fscore = fscore;
+    this.mscore = mscore;
+    this.infscore = infscore;
+    
+    this.avscore = function avscore()    
+    {            
+      document.write(this.faculty + ' : ' + name + ' ' + surname + ' : ' + ((this.fscore + this.mscore + this.infscore)/3).toFixed(2));
+      document.write('<br\>');
+       // alert(name + ' ' + surname + ' : ' + ((this.fscore + this.mscore + this.infscore)/3).toFixed(2));
+    }
+}
+
+
+student1 = new student('Aliaksandr', 'Palevoda', 9, 9, 10);
+
+i = (student1.fscore + student1.mscore + student1.iscore)/3; 
+student2 = new student('Elon', 'Mask', 9, 9, 9);
+
+student3 = new student('Caroline', 'Mergel', 9, 9, 9);
+
+
+student.prototype.faculty;
+student1.faculty = 'FIT';
+student2.faculty = 'Economy';
+student3.faculty = 'FIT';
+
+student1.avscore();
+student2.avscore();
+student3.avscore();
+
+document.write('<br\>');
+document.write('<br\>');
+
+
+//Задание 3
+document.write('Задание 3  <br\>');
+
+matharray = new Array();
+
+for (i = 0; i <10; i++)
+{
+    matharray[i] = (Math.random()*10).toFixed(0);
+    //document.write(matharray[i] + ' ');
+}
+
+ listarray = new Array("push", "shift", "unshift", "join", "reverse", "concat", "sort", "slice", "splice", "toString", "indexOf", "lastIndexOf", "forEach", "filter", "map", "every", "some", "reduce", "reduceRight", "pop");
+ listMath = new Array("abs", "acos", "acosh", "asin", "asinh", "atan", "atan2", "atanh", "cbrt", "ceil", "clz32", "cos", "cosh", "exp", "expm1", "floor", "fround", "hypot", "imul", "log", "log10", "log1p", "log2", "max", "min", "pow", "random", "round", "sign", "sin", "sinh", "sqrt", "tan", "tanh", "trunc");
+ myname = new String("Palevoda Aliaksandr Ivanovich");
+
+
+ document.write(matharray + '<br\>');
+ delete matharray[2];
+ document.write(matharray + '<br\>');
+  document.write('Есть ли в matharray 3-ий элемент : ');
+ document.write((2 in matharray) + '<br\>');
+
+
+ document.write('Есть ли св-во kolich в gr1: ');
+ document.write('kolich' in gr1);
+ document.write('<br\>');
+  document.write('Есть ли св-во name в gr1: ');
+ document.write('name' in student1);
+ document.write('<br\>');
+document.write('<br\>');
+document.write('<br\>');
+ 
+
+ 
+  document.write('Относится ли объект listarray к типу array: ');
+  document.write((listarray instanceof Array) + '<br\>' ); 
+  document.write('Относится ли объект myname к типу string: ');
+  document.write((myname instanceof String) + '<br\>' ); 
+    document.write('Относится ли объект gr1 к типу Gruppa: ');
+
+  document.write((gr1 instanceof Gruppa) + '<br\>' ); 
+  
+
+
+  
+  
+
+function checker()
+{
+    return 5;
+}
+document.write('<br\>');document.write('<br\>');
+
+document.write('Тип объекта Gruppa: ');
+document.write(typeof Gruppa);
+document.write('<br\>');
+document.write('Тип объекта checker: ');
+document.write(typeof checker);
+document.write('<br\>');
+document.write('Тип объекта student: ');
+document.write(typeof student);
+document.write('<br\>');
+document.write('Тип объекта matharray: ');
+document.write(typeof matharray);
+   
+document.write('<br\>');document.write('<br\>');
+
+
+
+
+
+
+
+ 
+
+
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+</body>
+</html>

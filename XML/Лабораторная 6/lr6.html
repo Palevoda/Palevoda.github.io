@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>SVG_1</title>
+<meta charset = "utf-8">
+    </head>
+
+    <body>
+<!--Задание 1-->
+<svg width = "600px" height = "400px">
+    <rect x = "5px" y = "5px" width = "200px" height = "140px" fill = "yellowgreen" stroke = "black"></rect>
+    <polygon  points="70,77 88,55 135,77" fill="violet" stroke="purple" stroke-width="2" style = "margin-left: 25px;" />;
+    <circle cx = "105px" cy = "70px" r = "45px" opacity = "0.9" fill = "white"></circle>    
+    <circle cx = "105px" cy = "70px" r = "45px" fill = "none" stroke = "black" stroke-width = "3px"></circle>
+</svg><br>
+
+<!--Задание 2-3 -->
+<svg width = "600px" height = "450px" style = "position: absolute; top: 10px;">
+  <ellipse rx="55" ry="30" cx="215" cy="240" transform = "rotate(-23 115 70)" fill = "url(#MyGradient2)"/> 
+  <rect x = "5px" y = "205px" width = "100px" height = "60px" fill = "url(#MyGradient)" stroke = "black" transform = "skewX(25), skewY(20)"></rect>
+  
+  <defs>
+<linearGradient id = "MyGradient">
+<stop offset = "30%" stop-color = "red"/>
+<stop offset = "70%" stop-color = "yellow"/>
+</linearGradient>
+
+<linearGradient id = "MyGradient2">
+<stop offset = "30%" stop-color = "yellowgreen"/>
+<stop offset = "70%" stop-color = "gold"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:70;stroke-miterlimit:22.9256}
+    .fil0 {fill:gray}
+    .fil1 {fill:red;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <ellipse class="fil0 str0" cx="9045.06" cy="8806.98" rx="2434.17" ry="2341.56"/>
+  <path class="fil1 str0" fill = "red" d="M10055.05 6675.87c130.98,-497.77 588.65,-865.22 1133.14,-865.22 646.61,0 1170.78,518.22 1170.78,1157.48 0,578.09 -428.64,1057.19 -988.83,1143.6"/>
+  <path class="fil0 str0" d="M8105.44 6655.25c-1.78,-3.9 1.81,3.89 0,0 -25.99,-55.74 -27.95,-53.66 -63.17,-109.3 -205.12,-323.9 -558.46,-622.88 -964.53,-629.02 -646.53,-9.77 -1179.05,538.79 -1188.13,1139.66 -9.08,600.87 257.28,1001.24 793.79,1113.7 -5.74,-32.25 17.25,-59.7 31.21,-94.26 56.17,-139.04 111.05,-263.2 190.93,-408.34 25.46,-46.25 63.4,-124.79 120.49,-178.72"/>
+  <path class="fil0 str0" d="M10435.46 6884.75c41.94,-374.28 362.95,-665.39 752.73,-665.39 418.29,0 757.37,335.23 757.37,748.77 0,409.68 -332.79,742.51 -745.68,748.68"/>
+  <path class="fil0 str0" d="M7759.72 6818.12c-97.11,-301.34 -371.35,-492.93 -705.73,-492.93 -414.59,0 -750.68,335.23 -750.68,748.77 0,347.87 237.82,640.32 560.14,724.44"/>
+  <ellipse class="fil0 str0" cx="8377.24" cy="8260.23" rx="509.32" ry="549.01"/>
+  <ellipse class="fil0 str0" cx="9799.38" cy="8280.08" rx="509.32" ry="549.01"/>
+  <ellipse class="fil0 str0" cx="9797.14" cy="8280.08" rx="122.24" ry="187.33"/>
+  <ellipse class="fil0 str0" cx="8377.24" cy="8260.23" rx="122.24" ry="187.33"/>
+  <path class="fil0 str0" d="M8079.58 9998.92c609.51,572.59 1404.04,136.91 1508.13,-38.74"/>
+ </g>
+</svg>

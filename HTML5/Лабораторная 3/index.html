@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML_5</title>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+</script>
+<style>
+mark 
+{
+    background-color: white;
+    color: yellowgreen;
+}
+video 
+{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-left: 510px;
+}
+
+audio
+{
+    margin-left: 40%;
+}
+
+.area
+    {
+      width: 320px;
+      height: 25px;
+      font-size: 13pt;
+      border: 1px solid rgb(49, 41, 41);
+      border-radius: 3px;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-top: 2px;
+      margin-left: 10px;
+    }
+    text {font-size: 13pt;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          margin-top: 5px;
+          margin-left: 1%;
+          font-weight: 550;
+      }
+       p
+    {
+    font-size: 13pt;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .buttons
+    {
+        width: 200px;
+        height: 25px;
+        border: 1px solid rgb(49, 41, 41);
+        border-radius: 8px;
+        text-align: center;
+        font-size: 13pt;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 5px;
+        margin-left: 6px;
+        background-color: whitesmoke;
+        display: inline-block;
+
+    }
+
+</style>
+</head>
+<body>
+    <header>
+<h2 align = "center">Я, <mark>Полевода Александр Иванович</mark>, изучаю HTML5</h2>
+</header>
+
+<nav>
+    <figure>
+    <img src = "photo.jpg">
+    <figcaption>Полевода А.И</figcaption>
+    </figure>
+</nav>
+<article>
+
+
+<video src = "struct.mp4" controls = "controls"></video><br>
+
+<audio src = "track1.mp3" controls = "controls"></audio><br>
+
+<form name = "form1" id = "form11">
+<text>Введите ваш email:</text><br>
+<input type = "email" name = "post" id = "post" class = "area" required autofocus></br>
+<text>Введите ссылку на страницу VK:</text><br>
+<input type = "url"  class = "area"></br>
+<text>Введите номер телефона:</text><br>
+<input type = "tel" value = "297797593" id = "phone" pattern = "[0-9]{5,12}"class = "area"></br>
+<text>Введите четное число:</text><br>
+<input type = "number"  step = "2" class = "area"></br>
+<text>Оценить форму от 1 до 10:</text><br>
+<input type = "range"  min = "1" max = "10" step = "1" class = "area"></br>
+<text>Введите фамилию для поиска:</text><br>
+<input type = "search" placeholder = "Введите фамилию" class = "area"></br>
+<text>Выберите цвет: </text><input type = "color" ></br>
+ <button class = "buttons" id = "but" onclick = "showInf(evt)" type = "submit">Submit</button><br>
+</form>
+
+
+<button class = "buttons" onclick = "but()">Местоположение</button><br><br>
+<script>
+    function but()
+    {
+    navigator.geolocation.getCurrentPosition(
+function (position)
+{
+    alert('Широта: ' + position.coords.latitude + 'Долгота: ' + position.coords.longitude);
+}
+    );
+    }
+</script>
+
+ <!-- <button class = "buttons" onclick = "showInf(evt); return false" type = "submit">Change</button><br> -->
+
+</article>
+
+<footer>
+
+
+<text>Контакты:</text><br>
+<p>Полевода Александр Иванович</p>
+<p>Курс - 1, ПОИТ-4</p>
+
+<p><span id = "mail_from_form"> 0</span><br>
+<span id = "phone_from_form"></span></p><br>
+
+<script>
+let message = document.querySelector('#mail_from_form');
+let phoneNumber = document.querySelector("#phone_from_form");
+let form = document.querySelector('#form11');
+let mail = document.querySelector('#post');
+let phone = document.querySelector('#phone');
+
+form.onsubmit = function(evt) {
+  evt.preventDefault();
+  message.textContent = 'e-mail: ' + mail.value;
+  phoneNumber.textContent = 'Номер телефона: ' + phone.value;
+};
+</script>
+
+</footer>
+</body>
+
+</html>

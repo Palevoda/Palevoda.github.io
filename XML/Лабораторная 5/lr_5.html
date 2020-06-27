@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>XML_5</title>
+</head>
+
+<body>
+<h1>Студент</h1>
+<div>
+<b>Фамилия:</b>
+<span id="sorname"></span>
+<br />
+<b>Имя:</b>
+<span id="name"></span>
+<br />
+<b>Отчество:</b>
+<span id="second_name"></span>
+<br />
+<b>Прохожной балл:</b>
+<span id="point"></span>
+<br />
+<b>Год рождения:</b>
+<span id="date"></span>
+<br /><br>
+</div>
+
+
+<script>
+if (window.XMLHttpRequest)
+xmlhttp = new XMLHttpRequest();
+else
+xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+xmlhttp.open("GET", "lr_4.xml",false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+
+document.getElementById("sorname").innerHTML = xmlDoc.getElementsByTagName("sorname")[0].childNodes[0].nodeValue;
+document.getElementById("name").innerHTML = xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("second_name").innerHTML = xmlDoc.getElementsByTagName("secondName")[0].childNodes[0].nodeValue;
+document.getElementById("point").innerHTML = xmlDoc.getElementsByTagName("point")[0].childNodes[0].nodeValue;
+document.getElementById("date").innerHTML = xmlDoc.getElementsByTagName("date")[0].childNodes[0].nodeValue;
+
+for (i = 1; i < xmlDoc.getElementsByTagName("sorname").length; i++)
+{
+document.write('<b>Фамилия: </b>' + xmlDoc.getElementsByTagName("sorname")[i].childNodes[0].nodeValue + '</br>');
+document.write('<b>Имя: </b>' + xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue + '</br>');
+document.write('<b>Отчество: </b>' + xmlDoc.getElementsByTagName("secondName")[i].childNodes[0].nodeValue + '</br>');
+document.write('<b>Средний балл: </b>' + xmlDoc.getElementsByTagName("point")[i].childNodes[0].nodeValue + '</br>');
+document.write('<b>Дата рождения: </b>' + xmlDoc.getElementsByTagName("date")[i].childNodes[0].nodeValue + '</br>' + '</br>');
+}
+
+</script>
+</body>
+</html>
+

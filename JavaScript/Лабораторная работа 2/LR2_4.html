@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+
+</style>
+
+<script type='text/javascript'>
+{
+   function task4()
+   {
+     x = new Number('17.6');
+     y = new Number('17');
+     x = +x;
+
+     document.write('<table border = 1px>');
+
+     document.write('<tr>');
+     document.write('<td>' + 'Число' + '<td>' + 'метод' + '<td>' + 'Результат' + '<td>' + 'Описание метода');
+
+     document.write('<tr>');
+     document.write('<td>' + x + '<td>' + '  toExponential  ' + '<td>' + x.toExponential(5) + '<td>' + 'Представляет число в экспоненциальной форме(5)' );
+
+     document.write('<tr>');
+     document.write('<td>' + '<td>' + '  toFixed  ' + '<td>' + x.toFixed(5) + '<td>' + 'Представляет число с фиксированным количеством знаков после запятой(5)' );
+
+     document.write('<tr>');
+     document.write('<td>' + '<td>' + '  toPrecision  ' + '<td>' + x.toPrecision(5) + '<td>' + 'Представляет число в фиксированном количестве символов(5) ');
+
+     document.write('<tr>');
+     document.write('<td>' + '<td>' + '  toString  ' + '<td>' + x.toString(8) + '<td>' + 'Представляет число в в указанной СС(16) в строковом виде ');
+
+
+
+   
+
+     document.write('<tr>');
+     document.write('<td>' + y + '<td>' + '  toExponential  ' + '<td>' + y.toExponential(5) + '<td>' + 'Представляет число в экспоненциальной форме' );
+
+     document.write('<tr>');
+     document.write('<td>' + '<td>' + '  toFixed  ' + '<td>' + y.toFixed(5) + '<td>' + 'Представляет число с фиксированным количеством знаков после запятой(5)' );
+
+     document.write('<tr>');
+     document.write('<td>' + '<td>' + '  toPrecision  ' + '<td>' + y.toPrecision(5) + '<td>' + 'Представляет число в фиксированном количестве символов(5) ');
+
+     document.write('<tr>');
+     document.write('<td>' + '<td>' + '  toString  ' + '<td>' + y.toString(8) + '<td>' + 'Представляет число в в указанной СС(16) в строковом виде ');
+   }
+
+}
+
+</script>
+
+
+</head>
+<body>
+
+<input type='button' value='Таблица с числами(Taskt 4)' onclick='task4()' class = "firsttask" />
+
+
+
+
+</body>
+</html>

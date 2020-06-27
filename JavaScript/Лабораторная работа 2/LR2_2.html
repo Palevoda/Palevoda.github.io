@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+ 
+</style>
+
+<script type='text/javascript'>
+
+function table()
+{
+    let a = prompt('Введите а', '');
+    let b = prompt('Введите b', '');
+    document.write('<table border = 1>');
+    for (let i = 1; i <=a; i++)
+    {
+         document.write('<br\>');
+        document.write('<tr>');
+        for (let j = 1; j <= b; j++)
+        {
+            result = i*j;
+            document.write('<td>' + result);
+        }
+    }
+
+   /* do
+    {
+        S = Math.PI*Math.pow(a, 2);
+        l = 2*Math.PI*a;
+        document.write('<tr>');
+           document.write('<td>' + a + '<td>' + S + '<td>' + l);
+        a = a + 0.3;
+    }while (a <= b) */
+
+}
+
+</script>
+</head>
+<body>
+<input type='button' value='Таблица умножения(Taskt 2)' onclick='table()' />
+
+
+
+
+
+</body>
+</html>

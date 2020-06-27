@@ -1,0 +1,22 @@
+<HTML>
+
+<IMG ID = "myimg" SRC = "2.jpg" STYLE = "position:absolute; top:300px; left:300px;">
+
+<SCRIPT>
+function curvemove(xid, yexpr, xexpr, ztime) {
+/* Движение по произвольной кривой.*/
+
+if (!xid) return null
+if (!ztime) ztime = 100  // интервал времени, мс
+x = 0	/* глобальная переменная, входящая в выражения уехрr и хехрr */
+setInterval(move,ztime,xid,yexpr,xexpr)
+}
+function move(xid, yexpr, xexpr) {	
+	x++
+  document.all[xid].style.top = eval(yexpr)
+  document.all[xid].style.left = eval(xexpr)
+}
+
+curvemove('myimg' , "Math.sin(0.05*x)*120+300" , "Math.cos(0.05*x)*120+300", 10)
+</SCRIPT>
+</HTML>

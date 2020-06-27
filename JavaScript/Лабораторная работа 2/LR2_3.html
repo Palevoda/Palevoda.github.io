@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+ 
+</style>
+
+<script type='text/javascript'>
+
+
+
+function circle()
+{
+    let a = prompt('Введите минимальный радиус', '');
+    let b = prompt('Введите максимальный радиус', '');   
+
+     document.write('<table border = 1>');
+        document.write('<tr>');
+           document.write('<td>' + 'Радиус' + '<td>' + 'Площадь круга' + '<td>' + 'Длинна окружности');
+           a=+a;
+           b=+b;
+            do
+            {
+        S = Math.PI*Math.pow(a, 2);
+        l = 2*Math.PI*a;
+        
+        document.write('<tr>');
+           document.write('<td>' + a + '<td>' + S + '<td>' + l);
+        a = a + 0.3;
+        
+           } while(a < b);
+
+   /* do
+    {
+        S = Math.PI*Math.pow(a, 2);
+        l = 2*Math.PI*a;
+        document.write('<tr>');
+           document.write('<td>' + a + '<td>' + S + '<td>' + l);
+        a = a + 0.3;
+    }while (a <= b) */
+
+}
+
+</script>
+</head>
+<body>
+
+<input type='button' value='Радиус(Taskt 3)' onclick='circle()' />
+
+
+
+
+</body>
+</html>

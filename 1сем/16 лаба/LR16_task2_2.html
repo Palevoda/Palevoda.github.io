@@ -1,0 +1,236 @@
+<html>
+    <head>
+<style type='text/css'>
+
+
+@keyframes balls
+   {
+       0%
+       {
+        background-color: rgb(154, 205, 50, 0.8);
+       }
+
+       20% 
+       {
+          background-color: rgba(255, 52, 52, 0.8);
+       }
+
+       40%
+       {
+           background-color: rgba(154, 255, 154, 0.8);
+       }
+       60%
+       {
+           background-color: rgb(252, 252, 7, 0.8);
+       }
+
+       80% 
+       {
+           background-color: rgba(0, 224, 49, 0.8);
+       }
+
+       100%
+       {
+           background-color: rgb(68, 235, 218, 0.8);
+       }
+
+       
+
+
+   } 
+@keyframes animation
+{
+    0%
+    {
+        margin-left: 1500px;
+        margin-top: 820px;
+        width: 390px;
+        height: 227px;
+        transform: rotateY(0deg);
+
+    }
+
+
+    16.6666%
+    {
+        margin-left: 700px;
+        margin-top: 820px;
+        width: 390px;
+        height: 227px;
+        transform: rotateY(0deg);
+    }
+
+    
+
+    41.6666%
+    {
+        margin-left: 700px;
+        margin-top: 820px;
+        width: 390px;
+        height: 227px;
+        transform: rotateY(0deg);
+    }
+
+    58.33333%
+    {
+        margin-left: 250px;
+        margin-top: 820px;
+        width: 390px;
+        height: 227px;
+        transform: rotateY(0deg);
+    }    
+
+    
+
+    83.333%
+    {
+        margin-left: 250px;
+        margin-top: 820px;
+        width: 390px;
+        height: 227px;
+        transform: rotateY(0deg);
+    }
+
+    100%
+    {
+      width: 39px;
+      height: 22px;
+      margin-left: 0px;
+      margin-top: 0px;
+      transform: rotate(90deg);
+    } 
+
+   
+}
+
+body
+{
+      background-image: url(elka.jpg);
+      width: 1920px;
+      height: 1080px;
+      background-repeat: no-repeat;
+
+}
+
+#moroz 
+{
+    margin-left: 1500px;
+    margin-top: 820px;
+    -webkit-animation: animation 12s infinite; 
+
+}
+
+.lights > #l1, #l2, #l3, #l4, #l5, #l6, #l7, #l8
+{
+    
+    height: 24px;
+    width: 24px;
+    border: 0.1px white solid;
+    border-radius: 12px;
+    background-color: yellowgreen;
+    -webkit-animation: balls 9s infinite;
+    
+    
+}
+
+#l1
+{
+    position: absolute;
+    left: 400px;
+    top:  400px;
+    
+}
+
+#l2
+{
+    position: absolute;
+    left: 500px;
+    top:  550px;
+    
+}
+#l3
+{
+    position: absolute;
+    left: 600px;
+    top:  600px;
+    
+}
+
+#l4
+{
+    position: absolute;
+    left: 700px;
+    top:  400px;
+    
+}
+
+#l5
+{
+    position: absolute;
+    left: 760px;
+    top:  850px;
+    
+}
+
+#l6
+{
+    position: absolute;
+    left: 660px;
+    top:  750px;
+    
+}
+
+#l7
+{
+    position: absolute;
+    left: 460px;
+    top:  850px;
+    
+}
+
+#l8
+{
+    position: absolute;
+    left: 560px;
+    top:  220px;
+    
+}
+
+
+/*
+#gift 
+{
+    position: absolute;
+    height: 84px;
+    width: 110px;
+    top: 800px;
+    left: 720px;
+    -webkit-animation: giftanim 12s infinity;;
+   
+   
+}
+
+*/
+
+
+</style>
+</head>
+<body>
+    
+<img src = "ded.gif" id = "moroz">
+
+<!--<img src = "gift.jpg" id = "gift"> -->
+
+<div class = "lights">
+<div id = "l1"></div>
+<div id = "l2"></div>
+<div id = "l3"></div>
+<div id = "l4"></div>
+<div id = "l5"></div>
+<div id = "l6"></div>
+<div id = "l7"></div>
+<div id = "l8"></div>
+</div>
+
+</body>
+</html>

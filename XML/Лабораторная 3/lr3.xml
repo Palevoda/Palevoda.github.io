@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-stylesheet type="text/css" href="lab1.css"?>-->
+<?xml-stylesheet type="text/xsl" href="lr3.xsl"?>
+
+<table>
+<tr>
+ <university>БГУ</university>
+ <city>Минск</city>
+ <point>328</point>
+ <plan>60</plan>
+</tr>
+<tr>
+ <university>БНТУ</university>
+ <city>Минск</city>
+ <point>312</point>
+ <plan>55</plan>
+</tr>
+<tr>
+<university>БГУИР</university>
+ <city>Минск</city>
+ <point>360</point>
+ <plan>20</plan>
+</tr>
+<tr>
+ <university>Митсо</university>
+ <city>Минск</city>
+ <point>280</point>
+ <plan>90</plan>
+</tr>
+<table>

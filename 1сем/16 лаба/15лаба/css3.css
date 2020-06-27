@@ -1,0 +1,122 @@
+table
+{
+    border: 20px solid black;
+    border-image: url(mulsan.jpg) 20 round;
+    background-image: url(bgimage1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+@font-face{
+  font-family: 'font1';
+  src:  url('font1.otf');
+  
+}
+
+table a 
+{
+    color: whitesmoke;
+    font-family: 'font1';
+}
+
+
+
+.h02, .h03
+{
+    
+    text-shadow: 5px -3px 2px greenyellow;
+}
+
+#overflow
+{
+    
+    text-align: none;
+    width: 18%;
+    height: 50px;
+    border: 2px solid greenyellow;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    padding: 10px;
+
+    
+}
+
+#overflow p
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.pall1
+{
+    background-color: rgba(46, 163, 95, 0.2);
+}
+
+#trans1, #trans2, #trans3, #trans4 
+{
+    display: inline-table;
+    width: 192px;
+    height: 108px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+
+
+#trans1:hover
+{
+    transform: scale(1.5, 1.5);
+}
+
+#trans2:hover
+{
+    transform: translate(50px, -50px);
+}
+
+#trans3:hover
+{
+    transform: rotate(30deg);
+}
+
+#trans4:hover
+{
+    transform: skew(10deg, 10deg)
+}
+
+
+
+#linear-gradient 
+{
+    width: 500px;
+    height: 170px;
+   /* background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 255, 0), black); */
+   background: linear-gradient(to right,red, orange, yellow, green, blue, purple)
+}
+
+#radial-gradient 
+{
+    margin-top: 50px;
+    width: 500px;
+    height: 170px;
+    background: radial-gradient(rgb(255, 255, 255), rgb(0, 255, 0), black);
+}
+
+#mulsantransition 
+{
+    height: 108px;
+    width: 192px;
+    margin-top: 100px;
+    margin-bottom: 600px;
+    
+}
+
+#mulsantransition:hover
+{
+     transform: scale(6, 6);
+     margin-left: 480px;
+     margin-top: 270px;
+     transition: 5s;
+}

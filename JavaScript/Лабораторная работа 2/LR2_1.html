@@ -1,0 +1,214 @@
+<html>
+<head>
+<style>
+ .buttonstyleactive
+{
+  border: 2.5px solid yellowgreen;
+  font-size: 16pt;
+  background-color: rgb(32, 29, 43);
+  color: whitesmoke;
+  font-weight: 550;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+   
+}
+
+ .nobuttonstyle
+{
+  border: 2.5px dotted yellowgreen;
+  font-size: 16pt;
+  background-color: rgb(32, 29, 43);
+  color: whitesmoke;
+  font-weight: 550;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+   
+}
+
+ .buttonstyleactive:hover
+{
+  
+  color: lime;
+
+   
+}
+
+ .nobuttonstyle:hover
+{
+  color: lime;
+}
+
+.nichego
+{
+    font-size: 15pt;font-weight: 500;color:yellowgreen;background-color: rgb(150, 153, 153);
+
+}
+
+</style>
+
+<script type='text/javascript'>
+//Задание 1
+function fun1()
+{
+    alert ('Вас приветсвует учебный центр');
+}
+
+function fun2()
+{
+    name = prompt('Введите ваше имя ', 'Имя');
+    document.write('<span style = "fontsize: 16pt; color:yellowgreen; font-weight: 550; background-color: rgb(150, 153, 153);">Добро пожаловать на наши курсы,</span> ' + name);
+}
+
+function fun3()
+{
+    form = confirm('Хотите стать Web-дизайнером?');
+    if (form == true)
+    document.write('<span style = "font-size: 15pt;font-weight: 500;color:yellowgreen;background-color: rgb(150, 153, 153);">Учите стили CSS и JavaScript!</span>');
+    else document.write('<span style = "font-size: 15pt;font-weight: 500;color:yellowgreen;background-color: rgb(150, 153, 153);">Упускаете время!<span>' );   
+
+}
+
+//Задание 2
+function fun4()
+{
+    document.write('10 + 5 = ', 10+5, '<br\>');
+    document.write('10 + 5 в символьном формате равно: ', '10' + '5', '<br\>');
+    document.write('Сложить число и строку: ', 10 + '5', '<br\>');
+    document.write('Сложить строку и число: ', '10' + 5, '<br\>');
+    alert('Результатом сложения строки и числа всегда будет строка', '<br\>');
+}
+//Задание 3
+function fun5()
+{
+    x = prompt('Введите переменную', 'введите x');
+    y = prompt('Введите переменную', 'введите у');
+    x1 = (35*y-25*x)/5+232;
+    y1 = (8*y/x+5*x/y - 43)*6;
+    document.write('(35*y-25*x)/5+232 = ', x1, '<br\>');
+    document.write('(8*y/x+5*x/y – 43)*6 = ', y1, '<br\>');
+    document.write('Остаток от деления первого выражения на второе = ', x1 % y1, '<br\>');
+
+    alert("Результат первого выражения " +x1);
+    alert("Результат второго выражения " +y1);
+    alert("Остаток от деления первого на второе " + x1 % y1);
+
+}
+
+//Задание 4
+/*Введите любое число. Если оно меньше 20 или больше 40 и не равно 15
+и делится без остатка на 5, то вывести сообщение «Правильное значение»,
+иначе «Не правильное значение».
+
+Свой пример:
+
+Ввести год и определить, високосный он или нет
+
+*/
+
+function fun6()
+{
+    x = prompt("Введите число", '');
+
+    if ((x < 20 || x > 40) && x != 15 && x%5==0)  
+         alert("Правильное значение");
+    else 
+        alert("Не правильное значение");
+
+    y = prompt("Введите год", '');
+
+    if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)
+       alert("Введенный вами год високосный");
+    else 
+       alert("Введенный вами год не високосный");
+}
+
+/*Задание 5
+Ввести 2 числа с клавиатуры. Сравнить их и вывести сообщение на
+страницу, например “А больше Б”, используя конструкцию if..elseif..else.
+
+Свой пример:
+Узнать, четное число или нет
+*/
+
+function fun7()
+{
+    A = prompt("Введите число А", '');
+    B = prompt('Введите число В', '');
+
+    if (A == B)
+       alert("Числа равны(А = В)"); else 
+    if (A > B)
+       alert("Число А больше числа B (А > В)");  else 
+    if (A < B) alert("Число А меньше числа В (А<B)");
+
+
+    C = prompt("Введите число", '');
+
+    (C%2 == 0) ? alert("Введенное вами число четное") : alert("Введенное вами число нечетное");
+}
+
+/*Задание 6
+Определить, какой сегодня день недели (использовать
+конструкцию switch case).
+*/
+
+function fun8()
+{
+    day = prompt("Введите номер дня недели", '');
+
+    switch(day)
+    {
+        case '1': document.write('<span style = "font-size: 15pt; font-weight: 500;color:yellowgreen;background-color: rgb(150, 153, 153);">Сегодня понедельник</span>'); break
+        case '2': document.write('<span style = "font-size: 15pt; font-weight: 500;color:whitesmoke;background-color: rgb(150, 153, 153);">Сегодня вторник</span>'); break
+        case '3': document.write('<span style = "font-size: 15pt; font-weight: 500;color:purple;background-color: rgb(150, 153, 153);">Сегодня среда</span>'); break
+        case '4': document.write('<span style = "font-size: 15pt; font-weight: 500;color:lime;background-color: rgb(150, 153, 153);">Сегодня четверг</span>'); break
+        case '5': document.write('<span style = "font-size: 15pt; font-weight: 500;color:yellowgreen;background-color: rgb(150, 153, 153);">Сегодня пятница</span>'); break
+        case '6': document.write('<span style = "font-size: 15pt; font-weight: 500;color:red;background-color: rgb(150, 153, 153);">Сегодня суббота</span>'); break
+        case '7': document.write('<span style = "font-size: 15pt; font-weight: 500;color:lime;background-color: rgb(150, 153, 153);">Сегодня воскресенье</span>'); break
+ 
+        
+
+        default: alert('Введено не верное число');
+    }
+}
+
+function fun9()
+{
+    
+ 
+    try
+    {  
+        alert("Здравствуйте");
+        sdvsfs;
+        prompt('Как вас зовут?', 'Выше имя');
+
+    }
+    catch (error)
+    {
+         alert("В коде допущена ошибка");
+    }
+}
+</script>
+</head>
+<body>
+<input type='button' value='Окно alert' onclick='fun1()' class = "nobuttonstyle" />
+<input type='button' value='Окно prompt' onclick='fun2()' class = "buttonstyleactive" />
+<input type = "button" value = 'Окно confirm ' onclick = 'fun3()' class = "buttonstyleactive" />
+<br>
+<input type = "button" value = 'Задание 2 '  onclick = 'fun4()' class = "nobuttonstyle"/>
+<br>
+<input type = "button" value = 'Задание 3 ' onclick = 'fun5()' class = "nobuttonstyle"/>
+<br>
+<input type = "button" value = 'Задание 4 ' onclick = 'fun6()' class = "nobuttonstyle"/>
+<br>
+<input type = "button" value = 'Задание 5 ' onclick = 'fun7()' class = "nobuttonstyle"/>
+
+<br>
+<input type = "button" value = 'Задание 6 ' onclick = 'fun8()' class = "buttonstyleactive"/>
+
+<br>
+<input type = "button" value = 'Задание 7 ' onclick = 'fun9()' class = "nobuttonstyle"/>
+
+
+</body>
+</html>

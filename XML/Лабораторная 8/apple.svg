@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:80;stroke-miterlimit:22.9256} 
+    .str1 {stroke:black;stroke-width:50;stroke-miterlimit:22.9256}
+    .str2 {stroke:brown;stroke-width:200;stroke-miterlimit:22.9256}
+    .fil0 {fill:lime}
+    .fil1 {fill:black}
+    .fil2 {fill: red;}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0"  d="M11303.74 6889.48c209.45,516.07 223.4,1515.08 138.65,1963.1 -273.39,1445.31 -1171.14,2596.91 -2248.96,2434.16 -1077.82,-162.75 -1703.89,-263.68 -2434.17,-2341.56 -730.28,-2077.88 1446.06,-2584.02 2434.17,-2341.56 542.67,9.32 2110.91,52.93 2110.31,285.86z"/>
+  <ellipse class="fil0 str0" cx="8525.61" cy="8398.43" rx="509.32" ry="549.01"/>
+  <ellipse class="fil0 str0" cx="9947.75" cy="8418.28" rx="509.32" ry="549.01"/>
+  <ellipse class="fil0 str0" cx="9945.51" cy="8418.28" rx="122.24" ry="187.33"/>
+  <ellipse class="fil0 str0" cx="8525.61" cy="8398.43" rx="122.24" ry="187.33"/>
+  <path class="fil0 str0" d="M8376.63 10217.9c657.62,617.78 1514.87,147.71 1627.18,-41.8"/>
+  <path class="fil1 str0" d="M8525.61 8211.1c-67.51,0 -122.24,83.87 -122.24,187.33 0,103.46 54.73,187.33 122.24,187.33 67.52,0 122.24,-83.87 122.24,-187.33 0,-103.46 -54.72,-187.33 -122.24,-187.33z"/>
+  <path class="fil1 str0" d="M9823.27 8418.28c0,103.46 54.73,187.33 122.24,187.33 67.52,0 122.24,-83.87 122.24,-187.33 0,-103.46 -54.72,-187.33 -122.24,-187.33 -67.51,0 -122.24,83.87 -122.24,187.33z"/>
+  <line class="fil2 str2" x1="9748.68" y1="5693.21" x2="9206.29" y2= "6632.48" />
+  <line class="fil2 str2" x1="9298.89" y1="5732.9" x2="9206.29" y2= "6632.48" />
+  <line class="fil2 str2" x1="9298.89" y1="5732.9" x2="9748.68" y2= "5693.21" />
+ </g>
+</svg>

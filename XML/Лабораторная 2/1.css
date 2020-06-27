@@ -1,0 +1,39 @@
+university
+{
+display:block;
+text-align:center;
+width: 50%;
+margin-top:12pt;
+border: 2px solid  rgb(36, 46, 45);
+font-size:15pt;
+margin: auto;
+font-weight: 600;
+color: rgb(49, 28, 71);
+}
+city
+{
+display:block;
+text-align:center;
+width: 50%;
+border: 1px solid rgb(21, 189, 175);
+font-size:15pt;
+margin: auto;
+}
+point
+{
+display:block;
+text-align:center;
+width: 50%;
+border: 1px solid rgb(21, 189, 175);
+font-size:15pt;
+margin: auto;
+}
+plan
+{
+display:block;
+text-align:center;
+width: 50%;
+border: 1px solid rgb(21, 189, 175);
+font-size:15pt;
+margin: auto;
+}

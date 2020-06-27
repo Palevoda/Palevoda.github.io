@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lr_4.xsl"?>
+
+<table>
+<tr>
+ <sorname>Полевода</sorname>
+ <name>Александр</name>
+ <secondName>Иванович</secondName>
+ <point>9</point>
+ <date>2001-11-15</date>
+</tr>
+
+<tr>
+ <sorname>Малиновский</sorname>
+ <name>Максим</name>
+ <secondName>Витальевич</secondName>
+ <point>6</point>
+ <date>2001-10-21</date>
+</tr>
+
+<tr>
+ <sorname>Карбанович</sorname>
+ <name>Артем</name>
+ <secondName>Константинович</secondName>
+ <point>5</point>
+ <date>2002-06-19</date>
+</tr>
+</table>

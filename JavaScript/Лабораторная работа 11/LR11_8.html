@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LR_11_8</title>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.
+js"></script>
+
+<style>
+    #car1
+    {
+        width: 400px;
+        height: 250px;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Задание1 -->
+<p id = "p1">При наведении курсора цвет изменится</p>
+<script> 
+$("#p1").mouseover(function(){$("#p1").css("color","green");});
+$('#p1').mouseout(function () {$('#p1').css('color', 'black');});
+</script>
+    <!-- Задание2 -->
+<p id = "p2">После щелчка текст станет больше</p>
+<script>
+$("#p2").click(function() {$('#p2').css('font-size', '16pt');});
+</script>
+    <!-- Задание 3-->
+<img src = "rapid.jpg" id = "car1"><br>
+<script>
+    $('#car1').click(function(){$('#car1').replaceWith('<img src = "kodiaq.jpeg" id = "car1">');});
+</script>
+
+ <!-- Задание 4-->
+<p id = "task4">Superb</p><br>
+<script>
+    $('#task4').click(function(){$('#task4').replaceWith('<img src = "superb.jpg" id = "car1">');});
+</script>
+<!-- Задание 5 -->
+<img src = "nature.jpg" id = "nature" width = "500px" height = "300px">
+<script>
+$('#nature').mouseover(function () {
+    $('#nature').css('width', '600px').css('height', '370px')
+});
+$('#nature').mouseout(function () {
+    $('#nature').css('width', '500px').css('height', '300px')
+});
+</script>
+
+ <!-- Задание 6 -->
+ <p id = "task6">Текст, вокруг которого появится рамка</p>
+<script>
+$('#task6').dblclick(function (){
+    $('#task6').css({'border':'2px solid green','width':'200px' });
+})
+</script>
+
+
+</body>
+</html>

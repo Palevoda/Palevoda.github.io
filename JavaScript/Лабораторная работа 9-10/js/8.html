@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel='stylesheet' type='text/css'>
+    <style type='text/css'>
+        body 
+        {
+            background: #ccc;
+            margin: 0;
+            font-family: Roboto;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+</head>
+
+<body>
+    <div class="quest-result draggable">			
+        <img src="2.jpg">
+        <p>перетащите мышью область текста</p>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            $(".draggable *").draggable();
+        });
+    </script>
+
+	<div class="quest-result">		
+		<img src="2.jpg" class="line-animation" onclick="animationLine()" style="position:relative;"><br/>
+			</div>
+	<script type="text/javascript">
+		function animationLine(){
+			$('.line-animation').animate({left: '400px'}, 1500, function(){
+                $('.line-animation').animate({left: '0px'}, 500, function(){
+                    $('.line-animation').animate({left: '100px'}, 500, function(){
+                        $('.line-animation').animate({left: '0px'}, 1000, function(){
+                        });
+                    });
+                });
+            });
+		}
+	</script>	
+
+	<div class="quest-result">		
+		<img src="2.jpg" class="line-animation-second" width = "10px" height = "10px" onclick="animationLine2()" style="position:relative;"><br/>
+	</div>
+	<script type="text/javascript">
+		function animationLine2(){
+			$('.line-animation-second').animate({left: '250px'}, 1500, function(){
+				$('.line-animation-second').animate({left: '300px', bottom: '100px'}, 1500, function(){
+					$('.line-animation-second').animate({left: '200px', bottom: '-100px'}, 1500, function(){
+                        $('.line-animation-second').animate({left: '0px', bottom: '0px'}, 500);
+				});
+			});
+		});
+        }
+	</script>	
+
+	<div class="quest-result">		
+        <canvas height='400px' width='600px' id="func" style="margin:auto;display:block;"></canvas>
+        <form>
+            <p><input type="radio" name="graph" value="-Math.pow(x, 2) * 0.025">y = x<sup>2</sup></p>
+            <p><input type="radio" name="graph" value="-Math.pow(x, 3) * 0.001">y = x<sup>3</sup></p>
+            <p><input type="radio" name="graph" value="Math.cos(x)">y = cos(x)</p>
+            <p><input type="radio" name="graph" value="Math.sin(x)">y = sin(x)</p>
+            <select>
+        	    <option>Black</option>
+        	    <option>Red</option>
+        	    <option>Blue</option>
+        	    <option>Gray</option>
+        	    <option>Orange</option>
+            </select>
+        </form>
+        <script type="text/javascript">	
+            $(function(){
+                $('#func')[0].getContext('2d').translate($('#func')[0].width / 2, $('#func')[0].height / 2);	
+                $("form input").click(function(){
+                    var graph = $(this).val(),
+                        canvas = $('#func')[0],
+                        ctx = canvas.getContext('2d');
+                    
+                    ctx.fillStyle = $('select').val();
+                    
+                    ctx.clearRect(-canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
+                    
+                    for(var x = -20; x < 20; x += 0.1){
+                        var y = eval(graph) * 5;
+                        ctx.beginPath();  
+                        ctx.arc(x * 5, y, 1, 0, Math.PI*2, false);
+                        ctx.closePath();  
+                        ctx.fill();  
+                    }
+                });
+            });
+        </script>
+    </div>	
+</body>
+
+</html>

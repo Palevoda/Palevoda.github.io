@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+</style>
+<script>
+
+
+
+function fopen1(){
+    Win1 = window.open("about:blank","window1","width=400,height=300");
+    Win1.document.write("Окно размеры 400х300px <br\>");
+    Win1.document.write("Имя окна: " + Win1.name);
+
+}
+function fclose1()
+{
+    Win1.close();
+}
+
+function fopen2(){
+    Win2 = window.open("about:blank","window2","width=600,height=390");
+    Win2.document.write("Окно размеры 600х390px <br\>");
+    Win2.document.write("Имя окна: " + Win2.name);
+
+}
+function fclose2()
+{
+    Win2.close();
+}
+
+function fopen3(){
+    Win3 = window.open("about:blank","window3","width=1024,height=840");
+    Win3.document.write("Окно размеры 1024х840px <br\>");
+    Win3.document.write("Имя окна: " + Win3.name);
+
+}
+function fclose3()
+{
+    Win3.close();
+}
+
+function task2()
+{
+  
+   document.write('<table border = 1px style = "border-collapse: collapse;">');
+   document.write('<tr>');
+   document.write('<td>' + 'Свойство' + '<td>' + 'Значение');
+   document.write('<tr>');
+   document.write('<td>' + 'Вся информация о браузере пользователя' + '<td>' + navigator.userAgent);
+   document.write('<tr>');
+   document.write('<td>' + 'Версия браузера' + '<td>' + navigator.appVersion);
+   document.write('<tr>');
+   document.write('<td>' + 'Название браузера' + '<td>' + navigator.appName);
+   document.write('<tr>');
+   document.write('<td>' + 'Кодовое название браузера' + '<td>' + navigator.appCodeName);
+   document.write('<tr>');
+   document.write('<td>' + 'ОС, которую использует пользователь' + '<td>' + navigator.platform);
+    document.write('<tr>');
+   document.write('<td>' + 'Включена ли поддержка Java в браузере' + '<td>' + navigator.javaEnabled());
+    document.write('<tr>');
+   document.write('<td>' + 'Ширина и высота экрана' + '<td>' +  screen.width+'x'+screen.height);
+    document.write('<tr>');
+   document.write('<td>' + 'Глубина цвета' + '<td>' + screen.colorDepth);
+    document.write('<tr>');
+   document.write('<td>' + 'URL, которые были посещены в данном окне браузера' + '<td>' + History.length);
+    document.write('<tr>');
+   document.write('<td>' + 'URL текущего документа' + '<td>' + location.href);
+    document.write('<tr>');
+   document.write('<td>' + 'Путь к загруженному документу' + '<td>' + location.pathname);
+    document.write('<tr>');
+   document.write('<td>' + 'Имя домена загруженного документа' + '<td>' + location.host);
+
+}
+
+  
+
+
+</script>
+</head>
+<body>
+<button onclick = "fopen1()">Открыть окно Win1</button>
+<button onclick = "fclose1()">Закрыть окно Win1</button> <br>
+<button onclick = "fopen2()">Открыть окно Win2</button>
+<button onclick = "fclose2()">Закрыть окно Win2</button> <br>
+<button onclick = "fopen3()">Открыть окно Win3</button>
+<button onclick = "fclose3()">Закрыть окно Win3</button> <br>
+
+
+<button onclick = "task2()">Task2</button>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

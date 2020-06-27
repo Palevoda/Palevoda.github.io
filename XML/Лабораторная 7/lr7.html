@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>SVG_2</title>
+<meta charset = "utf-8">
+<style>
+  .col-2 
+        {
+            fill: rgb(175, 32, 32); 
+            stroke:rgb(90, 4, 4);
+            stroke-width: 4px;
+        }  
+</style>
+    </head>
+
+    <body>
+
+<svg width = "100%" height = "200px">
+<rect stroke = "black" stroke-width = "1px" x = "5px" y = "5px" width = "100px" height = "60px" fill = "yellowgreen">
+    <animate attributeName = "x" from = "5px" to = "250px" dur = "6s" repeatCount="indefinite"></animate>
+    <animate attributeName = "stroke-width" from = "1px" to = "5px" repeatCount = "indefinite" dur = "2s"></animate>
+</rect>
+
+<circle cx = "50px" cy = "125px" r = "35px" fill = "gold">
+    <animate attributeName = "r" from = "35" to = "50" dur = "2s" begin = "0s"  repeatCount="indefinite"></animate>
+    <animate attributeName = "cx" from = "50px" to = "250px" repeatCount="indefinite" begin = "2s" dur = "4s" ></animate>
+    <animate attributeName = "fill" values = "gold; yellowgreen; rgb(175, 32, 32);" repeatCount="indefinite" begin = "2s" dur = "4s" ></animate>
+</circle>
+</svg><br>
+
+<!-- Задание 2 -->
+
+<svg width = "100%" height = "300px" >
+ <defs>
+  <path id="home2" d="M100 34.976c0 8.434-3.635 16.019-9.423 21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s-6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.84-9.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019 3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0 28.726 12.861 28.726 28.726z"/>
+</defs>
+
+<use xlink:href="#home2" class = "col-2" x = "50px" y = "50px" />
+
+<animateTransform 
+xlink:href="#home2" 
+attributeName="transform" 
+attributeType="XML" 
+type="scale" 
+from="1" 
+to="0.8"  
+begin = "0s" 
+dur = "1s" 
+values = "1; 0.9; 1"
+repeatCount="indefinite"/>
+
+</svg><br>
+
+<!-- 3 - 5 -->
+<svg style = "margin-left: 40%;" width="300" height="300"  viewBox="0 0 160 160">
+<defs>
+  <path id="heart" d="M100 34.976c0 8.434-3.635 16.019-9.423 21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s-6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.84-9.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019 3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0 28.726 12.861 28.726 28.726z"/>
+</defs>
+
+
+<use xlink:href="#heart" id = "H1" class = "col-2" x = "50px" y = "10px" />
+
+<animateTransform 
+xlink:href="#heart" 
+attributeName="transform" 
+attributeType="XML" 
+type="scale" 
+from="1" 
+to="0.8"  
+begin = "0s" 
+dur = "1s" 
+values = "1; 0.95; 1"
+repeatCount="indefinite"/>
+
+ <animate
+xlink:href="#heart"
+attributeName="stroke-dashoffset"
+from="0"
+to="320"
+dur="15s"
+begin="click"
+value = "0;320;0"
+></animate>
+<animate
+xlink:href="#heart"
+attributeName="stroke-dasharray"
+from="320"
+to="320"
+dur="15s"
+begin="click"
+
+values="320;0;640"
+></animate>
+</svg><br>
+
+
+
+    </body>
+</html>

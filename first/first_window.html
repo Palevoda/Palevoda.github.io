@@ -1,0 +1,96 @@
+<!DOCTYPE html
+<html>
+    <head>
+<title>Обратная матрицы</title>
+<meta charset = "utf-8">
+<link rel="stylesheet" type = "text/css" href = "style.css">
+<link rel="stylesheet" type = "text/css" href = "matrix.css">
+
+<link rel="shortcut icon" href="mainicon.png">
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+</script>
+    </head>
+
+    <body>
+<header>
+    <img src = "headicon.jpg" id = "headicon">
+   <h1 id = "nameofheader1" style = "text-align: center;">Высшая математика</h1> 
+   <p id = "nameofheader2"><i>Теория на пальцах</i></p>
+
+   <div id = "tomainpage">
+<a href = "D:\Бизнес\Идеи\IT-corporation\Сайты\Образовательная платформа по ВЫШМАТУ\main.html" targer = "_blank">Перейти к другим темам</a>
+   </div>
+
+    
+</header>
+   
+<article>
+    <h1 class = "topic">Обратная матрица</h1>
+    <p align = "center" style = "padding-left: 0%;"><i>Теоритическое введение</i></p>
+   
+<!-- Контент страницы-->
+
+
+
+<text class = "important">Понятие обратной матрицы вводится только для квадратных матриц</text><br>
+<br><text class = "important">Чтобы найти обратную матрицу, определитель исходной должен быть не равен нулю</text>
+<p><text class = "myb">Обратная матрица</text> – матрица, произведение которой на исходную матрицу в результате дает единичную матрицу.</p>
+<p>Для того чтобы найти обратную матрицу матриц нужно:<br>
+1)	Найти определитель исходной матрицы <br>
+2)	Составить матрицу из алгебраических дополнений к исходной матрицы <br>
+3)	Транспонировать матрицу из алгебраических дополнений <br>
+4)	Выполнить вычисления по формуле<br>
+<div class = "example">
+          <text class = "labelofexample">Формула обратной матрицы</text>
+      <img src = "revim1.jpg" class = "exampleimage">
+      </div><br>
+</p>
+<p><text class = "myb">[A<sub>ij</sub>]<sup>T</sup></text> - транспонированная матрица, составленная из алгебраических дополнений к исходной матрице.</p>
+<p>Найдем обратную матрицу по описанному алгоритму: 
+    <div class = "example">
+          <text class = "labelofexample">Вычисление обратной матрицы</text>
+      <img src = "revim2.jpg" class = "exampleimage">
+      </div>
+</p><p>
+    Алгебраические дополнения в матрице алгебраических дополнейний занимают ту же позицию, что и элемент, к которому эти дополнения находились.
+</p>
+
+
+
+    <!-- Конец части контента -->
+</article> 
+
+<nav>
+    <p id = "pnav"><a name = "menu">Навигация по сайту</a></p>
+    <ul>
+        <li id = "nav_matrix"><text class = "text_in_menu">Матрицы</text>
+        <ul id = "matrix_list">
+            <li class = "matrix_list_items" id = "mli_1"><a class = "a_in_menu" href = "sumofmatrix.html" target = "_blank" >Сумма матриц</a></li>
+            <li class = "matrix_list_items" id = "mli_2"><a class = "a_in_menu" href = "umnmatrix.html" target = "_blank" >Произведение матриц</a></li>
+            <li class = "matrix_list_items" id = "mli_3"><a class = "a_in_menu" href = "powmatrix.html" target = "_blank">Возведение в  квадрат</a></li>
+            <li class = "matrix_list_items" id = "mli_4"><a class = "a_in_menu" href = "determinant.html" target = "_blank">Определитель матрицы</a></li>
+            <li class = "matrix_list_items" id = "mli_5"><a class = "a_in_menu" href = "trans_matrix.html" target = "_blank">Транспонирование матрицы</a></li>
+            <li class = "matrix_list_items" id = "mli_6"><a class = "a_in_menu" href = "revmatrix.html" target = "_blank">Обратные матрицы</a></li>
+        </ul>
+
+
+        </li>
+
+    </ul>
+    <script src= "menu.js"></script>
+</nav>
+
+<footer>
+
+</footer>
+       
+    </body>
+</html>
+
+
+

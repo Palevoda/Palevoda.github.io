@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>SVG_1</title>
+<meta charset = "utf-8">
+    </head>
+
+    <body>
+<svg width = "100%" height = "1000px">
+    <rect fill = "linen" width = "100%" height = "1000px"/>
+    <style>
+        .col-1 {fill: #F35C78; stroke:rgb(92, 96, 129); }
+        .col-2 {fill: yellowgreen; stroke:rgb(59, 201, 201);}
+        .col-3 {fill: goldenrod; stroke: #F35C78;}
+        .col-4 {fill: rgb(92, 96, 129); stroke: yellowgreen;}
+        .col-5 {fill:rgb(59, 201, 201); stroke: goldenrod;}
+
+        .col-1, .col-2, .col-3, .col-4, .col-5 {stroke-width: 3px;}
+    </style>
+    <defs>
+ <path id="home" d="M100 59.375l-18.75-18.75v-28.125h12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+  <path id="home2" d="M100 69.375l-38.75-8.75v-38.125h12.5v15.25l-18.75-18.75-35 60v3.125h12.25v31.25h31.25v18.75h12.5v18.55h31.25v-31.25h32.5z"/>
+
+<path id="heart" d="M100 34.976c0 8.434-3.635 16.019-9.423
+21.274h0.048l-31.25 31.25c-3.125 3.125-6.25 6.25-9.375 6.25s6.25-3.125-9.375-6.25l-31.202-31.25c-5.788-5.255-9.423-12.84-
+9.423-21.274 0-15.865 12.861-28.726 28.726-28.726 8.434 0 16.019
+3.635 21.274 9.423 5.255-5.788 12.84-9.423 21.274-9.423 15.865 0
+28.726 12.861 28.726 28.726z"/>
+</defs>
+
+<use xlink:href="#home" class = "col-1" x = "60px" y = "15px" transform = "rotate(45 60 15)"/>
+<use xlink:href="#home2" class = "col-2" x = "150px" y = "15px" transform = "skewX(15), skewY(15)" />
+<use xlink:href="#home" class = "col-3" x = "330px" y = "15px" transform = "scale(0.8)" />
+<use xlink:href="#heart" class = "col-4" x = "410px" y = "35px" transform = "translate(-2 -21)"/> 
+<use xlink:href="#heart" class = "col-5" x = "510px" y = "35px" transform = "rotate(105 580 85)"/>
+<!--(task 5)Поменял размер салатового, теперь он немного похож на попугая :)-->
+</svg>
+
+</body>
+</html>

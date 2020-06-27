@@ -1,0 +1,1 @@
+docdument.write(22);

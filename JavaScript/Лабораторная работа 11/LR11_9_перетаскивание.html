@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LR_11_9</title>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+</script>
+
+<style>
+ canvas
+ {
+     width: 500px;
+     height: 800px;
+     margin-top: 40px;
+     margin-left: 50px;
+ }
+</style>
+</head>
+
+<body>
+    
+    <!-- Задание 1-->
+    <img src = "rapid.jpg" id = "car" width = "320px" height = "211px"><br>
+    <p id = "p1">Текст, который так же можно передвинуть</p>
+    <script>
+$('#car').draggable();
+$('#p1').draggable();
+    </script>
+    
+    <!-- Задание 2--> 
+    
+    <img src = "kodiaq.jpeg" id = "kod" width = "320px" height = " 211px"><br>
+    <button id = "but1">Кликните для прямолинейного движения объекта</button>
+    <button id = "but2">Кликните для криволинейного движения объекта</button><br>
+<script>
+$("#kod").css('position', 'relative');
+$('#kod').draggable();
+$(document).ready(function(){
+ $("#but1").click(function(){
+
+ $("#kod").animate({left:500},1000);
+ $("#car").animate({left:500},1000);
+
+ $("#kod").animate({top:-260},1000);
+ $("#car").animate({top:260},1000);
+
+ $("#kod").animate({left:0},1000);
+ $("#car").animate({left:0},1000);
+ });
+
+$('#but2').click(function(){for (var i = 0; i < 75; i++)
+{
+x = i*5;
+y = Math.cos(i/2)*20;
+$('#kod').animate({left: x, top: y}, 50);
+}} );
+});
+</script>
+<!-- Задание 4 -->
+<button id = "graph_x2">y = x<sup>2</sup></button>
+<button id = "graph_x3">y = x<sup>3</sup></button>
+<button id = "graph_sin">y = sin(x)</button>
+<button id = "graph_cos">y = cos(x)</button>
+<input type="color" id="color" onchange="color()"></br>
+<canvas id="canvas"></canvas>
+<script>
+function color() {
+var color = document.querySelector('#color').value;
+return color;
+}
+
+$('#graph_x2').click(function() {var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+for (i = -9; i < 9; i= i + 0.1)
+{
+    x = (10+i)*5; 
+    y = (100 - Math.pow(i, 2))/2;
+ctx.fillStyle = color();
+ctx.fillRect(x, y, 1.2, 1.2);
+}})
+
+$('#graph_x3').click(function() {var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+for (i = -4; i < 5; i= i + 0.1)
+{
+    x = (4+i)*5; 
+    if (i <= 0) y = -(Math.pow(i, 3))/3+33;
+   if (i >0) y = (100 - Math.pow(i, 3))/3;
+ctx.fillStyle = color();
+ctx.fillRect(x, y, 1, 1);
+}})
+
+$('#graph_sin').click(function() {var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+for (i = 0; i < 250; i= i + 0.1)
+{
+    x = i;    
+   y = (100 - Math.sin(i/10)*80)/3;
+ctx.fillStyle = color();
+ctx.fillRect(x, y, 1, 1);
+}})
+
+$('#graph_cos').click(function() {var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+for (i = 0; i < 250; i= i + 0.1)
+{
+   x = i;    
+   y = (100 - Math.cos(i/10)*80)/3;
+ctx.fillStyle = color();
+ctx.fillRect(x, y, 1, 1);
+}})
+
+</script>
+</body>
+</html>

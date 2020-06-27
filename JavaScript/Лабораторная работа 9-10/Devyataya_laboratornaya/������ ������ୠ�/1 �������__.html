@@ -1,0 +1,18 @@
+<HTML>
+<head><TITLE>Перемещаемое изображение</TITLE></head>
+<BODY id = "mybody">
+<IMG ID="myimg" SRC = "2.jpg" ondragend = "drag(this)" style = "position:absolute; top:10; left:10">
+<textarea ID="myarea" ondragend = "drag(this)" style = "position:absolute;">text
+</textarea>
+
+<SCRIPT>
+flag = false    // нельзя перемещать
+var id_img = ""
+var mag=true;
+function drag(q) {
+  q.style.top = event.clientY //document.all['myimg']
+  q.style.left = event.clientX
+}
+</SCRIPT>
+</BODY>
+</HTML>

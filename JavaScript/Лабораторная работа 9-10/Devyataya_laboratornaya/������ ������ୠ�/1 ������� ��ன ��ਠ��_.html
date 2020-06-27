@@ -1,0 +1,25 @@
+<HTML>
+<head><TITLE>Перемещаемое изображение</TITLE></head>
+<BODY id = "mybody" onmousemove="moving()" onmouseup="onmouseup1()">
+<!-- БЕЗ DRAG -->
+<IMG ID="myimg" SRC = "2.jpg" onmousedown = "drag()" style = "position:absolute; top:10; left:10">
+<textarea ID="myarea" onmousedown = "drag()" style = "position:absolute;">text
+</textarea>
+<SCRIPT>
+
+flag = false  // нельзя перемещать
+var id_img = ""
+function drag() {
+ flag = true
+ id_img = event.srcElement.id
+}
+function moving(){
+ if (flag){ // если можно перемещать
+ document.all[id_img].style.top = event.clientY
+ document.all[id_img].style.left = event.clientX } }
+function onmouseup1(){
+ flag = false // нельзя перемещать
+}
+</SCRIPT>
+</BODY>
+</HTML>

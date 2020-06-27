@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML_5</title>
+<style>
+mark 
+{
+    background-color: white;
+    color: yellowgreen;
+}
+video 
+{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    margin-left: 510px;
+}
+
+audio
+{
+    margin-left: 40%;
+}
+
+</style>
+</head>
+<body>
+<h2 align = "center">Я, <mark>Полевода Александр Иванович</mark>, изучаю HTML5</h2>
+
+<video src = "struct.mp4" controls = "controls"></video><br>
+
+<audio src = "track1.mp3" controls = "controls"></audio><br>
+
+<button onclick = "but()">Узнать местоположение</button>
+
+<script>
+    function but()
+    {
+    navigator.geolocation.getCurrentPosition(
+function (position)
+{
+    alert('Широта: ' + position.coords.latitude + 'Долгота: ' + position.coords.longitude);
+}
+    );
+    }
+</script>
+
+</body>
+
+</html>

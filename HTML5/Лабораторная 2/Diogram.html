@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diogram</title>
+
+</head>
+<body>
+   <text style = "font-size: 13pt; font-weight: 550;">Цвет осей:</text><input type="color" id="color" onchange="color()"></br>
+<input type="button" value="Нарисовать диаграмму" class="button" onclick="fun1()"> <br>
+
+<canvas id="canvas" width="650px" height="500px"></canvas>
+<script>
+
+function color() {
+var color = document.querySelector('#color').value;
+return color;
+}
+
+let curdeg = 0;
+function get_radians(deg)
+{
+    curdeg = deg;
+    return (Math.PI/180) * deg;
+}
+
+
+function fun1() {
+let canvas = document.querySelector('#canvas');
+let x = canvas.getContext('2d');
+
+//xk = +prompt('Введите количество лет в саду');
+//xs = +prompt('Введите количество лет в школе');
+//xu = +prompt('Введите количество лет в университете');
+xk = 3;
+xs = 11; 
+xu = 4;
+
+//Лет в детском саду
+x.lineWidth = 5;
+x.strokeStyle= color();
+x.beginPath();
+x.moveTo(250, 250);
+x.lineTo(350, 250);
+x.arc(250, 250, 100, 0, get_radians(xk/(xk+xs+xu)*360+curdeg));
+x.lineTo(250, 250);
+x.stroke();
+x.fillStyle = '#5CCDC9';
+x.fill();
+x.closePath();
+
+
+//Лет в школе
+x.beginPath(); 
+x.moveTo(250, 250);
+x.arc(250, 250, 100, get_radians(curdeg), get_radians(curdeg));
+x.lineTo(250, 250);
+x.arc(250, 250, 100, get_radians(curdeg), get_radians(xs/(xk+xs+xu)*360+curdeg));
+x.lineTo(250, 250);
+x.stroke();
+x.fillStyle = "#FFB173"
+x.fill();
+x.closePath();
+
+//Лет в университете
+x.beginPath(); 
+x.moveTo(250, 250);
+x.arc(250, 250, 100, get_radians(curdeg), get_radians(curdeg));
+x.lineTo(250, 250);
+x.arc(250, 250, 100, get_radians(curdeg), get_radians(xu/(xk+xs+xu)*360+curdeg));
+x.lineTo(250, 250);
+x.stroke();
+x.fillStyle = "#6EE768"
+x.fill();
+x.closePath();
+
+//Подписи
+x.beginPath(); 
+x.font=  '10pt Verdana';
+x.fillStyle= color();
+x.fillText('Сад', 290, 290);
+x.fillText('Школа', 280, 225);
+x.fillText('Университет', 160, 270);
+x.closePath();
+
+//Название диаграммы
+x.beginPath(); 
+x.font=  '16pt Verdana';
+x.fillStyle= '#3D2D84';
+x.shadowColor = "gray"
+x.shadowOffsetX = 5;
+x.shadowOffsetY = 5;
+x.shadowBlur = 5;
+x.fillText('Учеба', 230, 125);
+x.closePath();
+}
+
+</script>
+</body>
+
+</html>

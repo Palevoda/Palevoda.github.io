@@ -1,0 +1,24 @@
+<html>
+<head><TITLE>Перемещаемое изображение</TITLE></head>
+<BODY id = "mybody" onmouseup="up()" onmousemove="move()" >
+<IMG ID="myimg" SRC = "2.jpg" ondragstart = "drag()" style = "position:absolute; top:10; left:10">
+<!-- ondragstart не работает с полями - только если выделить там текст-->
+<textarea ID="myarea" onmousedown = "drag()" style = "position:absolute;">text
+</textarea>
+</BODY>
+<SCRIPT>
+flag = false // нельзя перемещать
+var id_img = ""
+function drag() {
+ flag = true
+ id_img = event.srcElement.id
+}
+function move(){
+ if (flag){ // если можно перемещать
+ document.all[id_img].style.top = event.clientY
+ document.all[id_img].style.left = event.clientX } }
+function up(){
+ flag = false // нельзя перемещать
+}
+</SCRIPT>
+</HTML>

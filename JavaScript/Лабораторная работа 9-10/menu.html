@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Меню</title>
+<style>
+    .menu-item{
+border: 2px soild #66CDAA;
+border-radius: 5px;
+display: inline-block;
+position: relative;
+cursor: pointer;
+margin-left: 7px;
+background-color: #66CDAA;
+padding: 5px;
+width: 100px;
+height: 25px;
+}
+.menu-item .submenu{
+
+width: 70px;
+left: 10px;
+top: 35px;
+height: 20px;
+background: gray;
+border: 2px soild gray;
+border-radius: 5px;
+position: absolute;
+cursor: pointer;
+width: 90px;
+}
+
+</style>
+
+
+
+
+
+</head>
+<body>
+<div id="nav">
+<div class="menu-item">
+ Меню 1
+<div class="submenu">
+Подменю
+</div></div>
+<div class="menu-item">
+ Меню 2
+<div class="submenu">
+Подменю
+</div></div>
+<div class="menu-item">
+ Меню 3
+<div class="submenu">
+Подменю
+</div></div>
+</div>
+<script>
+document.getElementById('nav').onmouseover = function(event){
+//отслеживает нахождение мыши внутри блока
+
+var target = event.target;
+//отслеживаем клик
+if (target.className == 'menu-item'){
+var s = target.getElementsByClassName('submenu');
+closeMenu();
+s[0].style.display='block';
+//s[0].innerHTML = "<a href = 'av.by'>ссылка</a>";
+//массив, содержащий вложенное меню
+}
+}
+
+document.onmouseover=function(event){
+var target = event.target;
+console.log(event.target);
+if (target.className!='menu-item' && target.className != 'submenu'){
+closeMenu();
+}
+}
+
+function closeMenu(){
+//получение всех элементов подменю в блоке nav, присваивание
+
+var menu = document.getElementById('nav');
+
+var subm=document.getElementsByClassName('submenu');
+
+for (var i=0; i <subm.length; i++)
+{
+subm[i].style.display ="none";
+}
+//subm[0].innerHTML = "<a href = 'av.by'>Ссылка</a>";
+}
+</script>
+
+</body>
+
+</html>

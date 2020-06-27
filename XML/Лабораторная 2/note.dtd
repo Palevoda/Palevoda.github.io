@@ -1,0 +1,10 @@
+<!DOCTYPE note 
+[
+<!ELEMENT note (university, city, point, plan)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT point (#PCDATA)>
+<!ELEMENT plan (#PCDATA)>
+]>
+
+<!--#PCDATA разбираемые текстовые данные-->
